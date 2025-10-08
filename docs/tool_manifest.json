@@ -1,0 +1,49 @@
+[
+  {
+    "name": "list_epiverse_packages",
+    "description": "Return the cached catalogue of Epiverse Trace repositories (including summaries, topical tags, and coarse categories) that the agent can call into. Refresh the cache to pull the latest packages and metadata from GitHub.",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "refresh": {
+          "type": "boolean",
+          "description": "Set to true to query GitHub for the newest package list before returning results.",
+          "default": false
+        }
+      }
+    }
+  },
+  {
+    "name": "call_epiverse_function",
+    "description": "Invoke any function from an Epiverse Trace R package via rpy2. Supports automatic conversion between pandas objects and R data frames. Use the package summaries returned by list_epiverse_packages to choose an appropriate target before calling.",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "package": {
+          "type": "string",
+          "description": "Name of the Epiverse Trace R package (e.g., incidence2, linelist, epiparameter)."
+        },
+        "function": {
+          "type": "string",
+          "description": "Function within the package to execute."
+        },
+        "args": {
+          "type": "array",
+          "description": "Optional ordered arguments passed positionally to the R function.",
+          "items": {}
+        },
+        "kwargs": {
+          "type": "object",
+          "description": "Optional named arguments passed to the R function.",
+          "additionalProperties": {}
+        },
+        "auto_convert": {
+          "type": "boolean",
+          "description": "If true (default), automatically convert pandas and Python primitives to their R equivalents and back.",
+          "default": true
+        }
+      },
+      "required": ["package", "function"]
+    }
+  }
+]
