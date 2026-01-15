@@ -1,8 +1,8 @@
 [
   {
     "name": ".github",
-    "summary": "",
     "category": "infrastructure",
+    "homepage": "https://github.com/epiverse-trace/.github",
     "topics": [
       "community-health",
       "continuous-integration",
@@ -11,13 +11,44 @@
       "infrastructure",
       "quality-assurance",
       "r-package-automation"
-    ],
-    "homepage": "https://github.com/epiverse-trace/.github"
+    ]
+  },
+  {
+    "name": "ColOpenData",
+    "category": "r_package",
+    "summary": "ColOpenData is a package that acquires and wrangles Colombian socioeconomic, geospatial and climate data",
+    "homepage": "https://github.com/epiverse-trace/ColOpenData",
+    "topics": [
+      "climate",
+      "colombia",
+      "data-package",
+      "demographics",
+      "maps",
+      "r",
+      "r-package"
+    ]
+  },
+  {
+    "name": "EpiTKit-EN",
+    "category": "r_package",
+    "homepage": "https://github.com/epiverse-trace/EpiTKit-EN"
+  },
+  {
+    "name": "EpiTKit-FR",
+    "category": "r_package",
+    "homepage": "https://github.com/epiverse-trace/EpiTKit-FR"
+  },
+  {
+    "name": "Severity_methods_assessment",
+    "category": "r_package",
+    "summary": "Assessment of severity estimation methods during an infectious disease outbreak",
+    "homepage": "https://github.com/epiverse-trace/Severity_methods_assessment"
   },
   {
     "name": "blueprints",
-    "summary": "Software development blueprints for epiverse-trace",
     "category": "repository",
+    "summary": "Software development blueprints for epiverse-trace",
+    "homepage": "https://github.com/epiverse-trace/blueprints",
     "topics": [
       "best-practices",
       "epiverse",
@@ -26,13 +57,13 @@
       "r-package-development",
       "standard-operating-procedure",
       "standards"
-    ],
-    "homepage": "https://github.com/epiverse-trace/blueprints"
+    ]
   },
   {
     "name": "cfr",
-    "summary": "R package to estimate disease severity and under-reporting in real-time, accounting for reporting delays in epidemic time-series",
     "category": "r_package",
+    "summary": "R package to estimate disease severity and under-reporting in real-time, accounting for reporting delays in epidemic time-series",
+    "homepage": "https://github.com/epiverse-trace/cfr",
     "topics": [
       "case-fatality-rate",
       "epidemic-modelling",
@@ -43,59 +74,61 @@
       "r",
       "r-package",
       "sdg-3"
-    ],
-    "homepage": "https://github.com/epiverse-trace/cfr"
+    ]
   },
   {
     "name": "cleanepi",
-    "summary": "R package to clean and standardize epidemiological data",
     "category": "r_package",
+    "summary": "R package to clean and standardize epidemiological data",
+    "homepage": "https://github.com/epiverse-trace/cleanepi",
     "topics": [
       "data-cleaning",
       "epidemiology",
       "epiverse",
       "r",
       "r-package"
-    ],
-    "homepage": "https://github.com/epiverse-trace/cleanepi"
+    ]
   },
   {
     "name": "climateR0",
-    "summary": "",
     "category": "r_package",
     "homepage": "https://github.com/epiverse-trace/climateR0"
   },
   {
-    "name": "ColOpenData",
-    "summary": "ColOpenData is a package that acquires and wrangles Colombian socioeconomic, geospatial and climate data",
-    "category": "r_package",
-    "topics": [
-      "climate",
-      "colombia",
-      "data-package",
-      "demographics",
-      "maps",
-      "r",
-      "r-package"
-    ],
-    "homepage": "https://github.com/epiverse-trace/ColOpenData"
-  },
-  {
     "name": "epi-training-kit",
-    "summary": "An e-learning strategy for training on analysis, modelling and response to outbreaks and epidemics in Latin-America and the Caribbean",
     "category": "r_package",
+    "summary": "An e-learning strategy for training on analysis, modelling and response to outbreaks and epidemics in Latin-America and the Caribbean",
+    "homepage": "https://github.com/epiverse-trace/epi-training-kit",
     "topics": [
       "data-science",
       "e-learning",
       "epidemics",
       "training"
-    ],
-    "homepage": "https://github.com/epiverse-trace/epi-training-kit"
+    ]
+  },
+  {
+    "name": "epiCo",
+    "category": "r_package",
+    "summary": "R package for statistical and spatiotemporal modeling of epidemiological data for vector-borne diseases in Colombia",
+    "homepage": "https://github.com/epiverse-trace/epiCo",
+    "topics": [
+      "colombia",
+      "decision-support",
+      "demographics",
+      "epiverse",
+      "outbreak-analysis",
+      "r",
+      "r-package",
+      "sdg-3",
+      "spatio-temporal-analysis",
+      "vector-borne-diseases"
+    ]
   },
   {
     "name": "epichains",
-    "summary": "Methods for simulating and analysing the sizes and lengths of infectious disease transmission chains from branching process models",
     "category": "r_package",
+    "summary": "Methods for simulating and analysing the sizes and lengths of infectious disease transmission chains from branching process models",
+    "homepage": "https://github.com/epiverse-trace/epichains",
     "topics": [
       "branching-processes",
       "epidemic-dynamics",
@@ -108,31 +141,13 @@
       "r-stats",
       "transmission-chain",
       "transmission-chain-reconstruction"
-    ],
-    "homepage": "https://github.com/epiverse-trace/epichains"
-  },
-  {
-    "name": "epiCo",
-    "summary": "R package for statistical and spatiotemporal modeling of epidemiological data for vector-borne diseases in Colombia",
-    "category": "r_package",
-    "topics": [
-      "colombia",
-      "decision-support",
-      "demographics",
-      "epiverse",
-      "outbreak-analysis",
-      "r",
-      "r-package",
-      "sdg-3",
-      "spatio-temporal-analysis",
-      "vector-borne-diseases"
-    ],
-    "homepage": "https://github.com/epiverse-trace/epiCo"
+    ]
   },
   {
     "name": "epidemics",
-    "summary": "A library of published compartmental epidemic models, and classes to represent demographic structure, non-pharmaceutical interventions, and vaccination regimes, to compose epidemic scenarios.",
     "category": "r_package",
+    "summary": "A library of published compartmental epidemic models, and classes to represent demographic structure, non-pharmaceutical interventions, and vaccination regimes, to compose epidemic scenarios.",
+    "homepage": "https://github.com/epiverse-trace/epidemics",
     "topics": [
       "decision-support",
       "epidemic-modelling",
@@ -148,36 +163,36 @@
       "rcppeigen",
       "scenario-analysis",
       "vaccination"
-    ],
-    "homepage": "https://github.com/epiverse-trace/epidemics"
+    ]
   },
   {
     "name": "epimodelac",
-    "summary": "Training materials for the epimodelac workshop",
     "category": "r_package",
+    "summary": "Training materials for the epimodelac workshop",
+    "homepage": "https://github.com/epiverse-trace/epimodelac",
     "topics": [
       "carpentries-workbench",
       "r",
       "rstats"
-    ],
-    "homepage": "https://github.com/epiverse-trace/epimodelac"
+    ]
   },
   {
     "name": "epimodelac-en",
-    "summary": "Training materials for the epimodelac workshop",
     "category": "r_package",
+    "summary": "Training materials for the epimodelac workshop",
     "homepage": "https://github.com/epiverse-trace/epimodelac-en"
   },
   {
     "name": "epinetwork",
-    "summary": "Modelling transmission on real-world social networks",
     "category": "r_package",
+    "summary": "Modelling transmission on real-world social networks",
     "homepage": "https://github.com/epiverse-trace/epinetwork"
   },
   {
     "name": "epiparameter",
-    "summary": "R package with classes and helper functions for working with epidemiological parameters and access to a library of epidemiological parameters for infectious diseases",
     "category": "r_package",
+    "summary": "R package with classes and helper functions for working with epidemiological parameters and access to a library of epidemiological parameters for infectious diseases",
+    "homepage": "https://github.com/epiverse-trace/epiparameter",
     "topics": [
       "data-access",
       "data-package",
@@ -186,44 +201,43 @@
       "probability-distribution",
       "r",
       "r-package"
-    ],
-    "homepage": "https://github.com/epiverse-trace/epiparameter"
-  },
-  {
-    "name": "epiparameterDashboard",
-    "summary": "Explore the database of epidemiological parameters provided by the {epiparameterDB} package",
-    "category": "application",
-    "homepage": "https://github.com/epiverse-trace/epiparameterDashboard"
+    ]
   },
   {
     "name": "epiparameterDB",
-    "summary": "Database of epidemiological parameters",
     "category": "r_package",
+    "summary": "Database of epidemiological parameters",
+    "homepage": "https://github.com/epiverse-trace/epiparameterDB",
     "topics": [
       "data-package",
       "epidemiology",
       "epiverse",
       "r",
       "r-package"
-    ],
-    "homepage": "https://github.com/epiverse-trace/epiparameterDB"
+    ]
+  },
+  {
+    "name": "epiparameterDashboard",
+    "category": "application",
+    "summary": "Explore the database of epidemiological parameters provided by the {epiparameterDB} package",
+    "homepage": "https://github.com/epiverse-trace/epiparameterDashboard"
   },
   {
     "name": "epishiny",
-    "summary": "[FORK] Tools for interactive visualisation of epidemiological linelist data",
     "category": "application",
+    "summary": "[FORK] Tools for interactive visualisation of epidemiological linelist data",
     "homepage": "https://github.com/epiverse-trace/epishiny"
   },
   {
     "name": "epishowcase",
-    "summary": "",
     "category": "r_package",
     "homepage": "https://github.com/epiverse-trace/epishowcase"
   },
   {
     "name": "episoap",
-    "summary": "[Not published - under active development] A Store of Outbreak Analytics Pipelines Provided as Rmarkdown Report Templates",
     "category": "r_package",
+    "summary": "[Not published - under active development] A Store of Outbreak Analytics Pipelines Provided as Rmarkdown Report Templates",
+    "homepage": "https://github.com/epiverse-trace/episoap",
     "topics": [
       "automated-report",
       "decision-support",
@@ -235,86 +249,70 @@
       "r",
       "r-package",
       "rmarkdown-templates"
-    ],
-    "homepage": "https://github.com/epiverse-trace/episoap"
+    ]
   },
   {
     "name": "epitkit",
-    "summary": "",
     "category": "r_package",
     "homepage": "https://github.com/epiverse-trace/epitkit"
   },
   {
-    "name": "EpiTKit-EN",
-    "summary": "",
-    "category": "r_package",
-    "homepage": "https://github.com/epiverse-trace/EpiTKit-EN"
-  },
-  {
-    "name": "EpiTKit-FR",
-    "summary": "",
-    "category": "r_package",
-    "homepage": "https://github.com/epiverse-trace/EpiTKit-FR"
-  },
-  {
     "name": "epiverse",
-    "summary": "Meta-package for the Epiverse-TRACE R packages",
     "category": "r_package",
+    "summary": "Meta-package for the Epiverse-TRACE R packages",
+    "homepage": "https://github.com/epiverse-trace/epiverse",
     "topics": [
       "epiverse",
       "r",
       "r-package"
-    ],
-    "homepage": "https://github.com/epiverse-trace/epiverse"
+    ]
   },
   {
     "name": "epiverse-trace.github.io",
-    "summary": "Technical blog of the Epiverse-TRACE project, where we share opinions and investigations in R package development, or scientific software development more generally",
     "category": "r_package",
+    "summary": "Technical blog of the Epiverse-TRACE project, where we share opinions and investigations in R package development, or scientific software development more generally",
+    "homepage": "https://github.com/epiverse-trace/epiverse-trace.github.io",
     "topics": [
       "blog",
       "epiverse",
       "quarto-website"
-    ],
-    "homepage": "https://github.com/epiverse-trace/epiverse-trace.github.io"
+    ]
   },
   {
     "name": "epiverse-trace.r-universe.dev",
-    "summary": "R-universe for the epiverse-trace GitHub organisation",
     "category": "repository",
+    "summary": "R-universe for the epiverse-trace GitHub organisation",
+    "homepage": "https://github.com/epiverse-trace/epiverse-trace.r-universe.dev",
     "topics": [
       "automation",
       "continuous-deployment",
       "epiverse",
       "infrastructure"
-    ],
-    "homepage": "https://github.com/epiverse-trace/epiverse-trace.r-universe.dev"
+    ]
   },
   {
     "name": "epiverse_demos",
-    "summary": "",
     "category": "r_package",
     "homepage": "https://github.com/epiverse-trace/epiverse_demos"
   },
   {
     "name": "epiversedashboard",
-    "summary": "Epiverse-TRACE activity dashboard",
     "category": "application",
+    "summary": "Epiverse-TRACE activity dashboard",
+    "homepage": "https://github.com/epiverse-trace/epiversedashboard",
     "topics": [
       "infrastructure"
-    ],
-    "homepage": "https://github.com/epiverse-trace/epiversedashboard"
+    ]
   },
   {
     "name": "epiverselearner",
-    "summary": "",
     "category": "r_package",
     "homepage": "https://github.com/epiverse-trace/epiverselearner"
   },
   {
     "name": "epiversetheme",
-    "summary": "",
     "category": "r_package",
+    "homepage": "https://github.com/epiverse-trace/epiversetheme",
     "topics": [
       "community-health",
       "epiverse",
@@ -323,30 +321,29 @@
       "pkgdown-template",
       "r",
       "r-package"
-    ],
-    "homepage": "https://github.com/epiverse-trace/epiversetheme"
+    ]
   },
   {
     "name": "etdashboard",
-    "summary": "Developer dashboard for a universe overview of Epiverse-TRACE packages",
     "category": "application",
+    "summary": "Developer dashboard for a universe overview of Epiverse-TRACE packages",
     "homepage": "https://github.com/epiverse-trace/etdashboard"
   },
   {
     "name": "etstats",
-    "summary": "",
     "category": "r_package",
+    "homepage": "https://github.com/epiverse-trace/etstats",
     "topics": [
       "organisation-tool",
       "r",
       "r-package"
-    ],
-    "homepage": "https://github.com/epiverse-trace/etstats"
+    ]
   },
   {
     "name": "finalsize",
-    "summary": "R package to calculate the final size of an SIR epidemic in populations with heterogeneity in social contacts and disease susceptibility",
     "category": "r_package",
+    "summary": "R package to calculate the final size of an SIR epidemic in populations with heterogeneity in social contacts and disease susceptibility",
+    "homepage": "https://github.com/epiverse-trace/finalsize",
     "topics": [
       "epidemic-modelling",
       "epidemiology",
@@ -356,19 +353,18 @@
       "r-package",
       "rcpp",
       "sdg-3"
-    ],
-    "homepage": "https://github.com/epiverse-trace/finalsize"
+    ]
   },
   {
     "name": "gam-summit",
-    "summary": "",
     "category": "documentation",
     "homepage": "https://github.com/epiverse-trace/gam-summit"
   },
   {
     "name": "git-rstudio-basics",
-    "summary": "Version Control with Git using Rstudio",
     "category": "r_package",
+    "summary": "Version Control with Git using Rstudio",
+    "homepage": "https://github.com/epiverse-trace/git-rstudio-basics",
     "topics": [
       "alpha-stage",
       "carpentries-workbench",
@@ -377,42 +373,40 @@
       "novice",
       "rstudio",
       "version-control"
-    ],
-    "homepage": "https://github.com/epiverse-trace/git-rstudio-basics"
+    ]
   },
   {
     "name": "hex-stickers",
-    "summary": "",
     "category": "infrastructure",
+    "homepage": "https://github.com/epiverse-trace/hex-stickers",
     "topics": [
       "epiverse",
       "logos"
-    ],
-    "homepage": "https://github.com/epiverse-trace/hex-stickers"
+    ]
   },
   {
     "name": "howto",
-    "summary": "",
     "category": "r_package",
     "homepage": "https://github.com/epiverse-trace/howto"
   },
   {
     "name": "iraca",
-    "summary": "Agent-Based model simulation of mosquito-human interaction in the Colombian and LAC setting",
     "category": "r_package",
+    "summary": "Agent-Based model simulation of mosquito-human interaction in the Colombian and LAC setting",
+    "homepage": "https://github.com/epiverse-trace/iraca",
     "topics": [
       "agent-based-modeling",
       "r",
       "r-package",
       "rcpp",
       "vector-borne-diseases"
-    ],
-    "homepage": "https://github.com/epiverse-trace/iraca"
+    ]
   },
   {
     "name": "linelist",
-    "summary": "R package for handling linelist data",
     "category": "r_package",
+    "summary": "R package for handling linelist data",
+    "homepage": "https://github.com/epiverse-trace/linelist",
     "topics": [
       "data",
       "data-structures",
@@ -423,60 +417,59 @@
       "r-package",
       "sdg-3",
       "structured-data"
-    ],
-    "homepage": "https://github.com/epiverse-trace/linelist"
+    ]
   },
   {
     "name": "llm-guidance",
-    "summary": "Exploring use of LLMs to guide users to relevant packages/documentation",
     "category": "r_package",
+    "summary": "Exploring use of LLMs to guide users to relevant packages/documentation",
     "homepage": "https://github.com/epiverse-trace/llm-guidance"
   },
   {
     "name": "numberize",
-    "summary": "Convert words to numbers in English, French and Spanish",
     "category": "r_package",
+    "summary": "Convert words to numbers in English, French and Spanish",
+    "homepage": "https://github.com/epiverse-trace/numberize",
     "topics": [
       "r-package",
       "r-programming"
-    ],
-    "homepage": "https://github.com/epiverse-trace/numberize"
+    ]
   },
   {
     "name": "packagetemplate",
-    "summary": "Template of an R package with standard Epiverse-TRACE automation",
     "category": "r_package",
+    "summary": "Template of an R package with standard Epiverse-TRACE automation",
+    "homepage": "https://github.com/epiverse-trace/packagetemplate",
     "topics": [
       "github-template",
       "r",
       "r-package",
       "template-repository"
-    ],
-    "homepage": "https://github.com/epiverse-trace/packagetemplate"
+    ]
   },
   {
     "name": "personas",
-    "summary": "",
     "category": "r_package",
     "homepage": "https://github.com/epiverse-trace/personas"
   },
   {
     "name": "quickfit",
-    "summary": "[SUSPENDED] Toolbox of model fitting helper functions",
     "category": "r_package",
+    "summary": "[SUSPENDED] Toolbox of model fitting helper functions",
+    "homepage": "https://github.com/epiverse-trace/quickfit",
     "topics": [
       "distributions",
       "likelihood",
       "mle",
       "r",
       "r-package"
-    ],
-    "homepage": "https://github.com/epiverse-trace/quickfit"
+    ]
   },
   {
     "name": "readepi",
-    "summary": "An R package for importing epi data into R.",
     "category": "r_package",
+    "summary": "An R package for importing epi data into R.",
+    "homepage": "https://github.com/epiverse-trace/readepi",
     "topics": [
       "data-import",
       "epidemiology",
@@ -484,13 +477,12 @@
       "health-information-systems",
       "r",
       "r-package"
-    ],
-    "homepage": "https://github.com/epiverse-trace/readepi"
+    ]
   },
   {
     "name": "research-compendium",
-    "summary": "",
     "category": "r_package",
+    "homepage": "https://github.com/epiverse-trace/research-compendium",
     "topics": [
       "carpentries-workbench",
       "english-language",
@@ -498,51 +490,51 @@
       "reproducible-research",
       "research-compendium",
       "rstats"
-    ],
-    "homepage": "https://github.com/epiverse-trace/research-compendium"
+    ]
   },
   {
     "name": "rmdscaffold",
-    "summary": "[Not published - under active development]",
     "category": "r_package",
+    "summary": "[Not published - under active development]",
+    "homepage": "https://github.com/epiverse-trace/rmdscaffold",
     "topics": [
       "r",
       "r-package"
-    ],
-    "homepage": "https://github.com/epiverse-trace/rmdscaffold"
+    ]
   },
   {
     "name": "safeframe",
-    "summary": "Tagging, validating, and safeguarding data to help harden data pipelines.",
     "category": "r_package",
+    "summary": "Tagging, validating, and safeguarding data to help harden data pipelines.",
+    "homepage": "https://github.com/epiverse-trace/safeframe",
     "topics": [
       "r-package"
-    ],
-    "homepage": "https://github.com/epiverse-trace/safeframe"
+    ]
   },
   {
     "name": "sandpaper",
-    "summary": "[FORK] User Interface for The Carpentries Workbench",
     "category": "r_package",
+    "summary": "[FORK] User Interface for The Carpentries Workbench",
     "homepage": "https://github.com/epiverse-trace/sandpaper"
   },
   {
     "name": "scenarios",
-    "summary": "[SUSPENDED]: R package to compare epidemic scenario model outcomes.",
     "category": "r_package",
+    "summary": "[SUSPENDED]: R package to compare epidemic scenario model outcomes.",
+    "homepage": "https://github.com/epiverse-trace/scenarios",
     "topics": [
       "epidemic-modelling",
       "epidemiology",
       "epiverse",
       "r",
       "r-package"
-    ],
-    "homepage": "https://github.com/epiverse-trace/scenarios"
+    ]
   },
   {
     "name": "serofoi",
-    "summary": "Estimates the Force-of-Infection of a given pathogen from population based sero-prevalence studies",
     "category": "r_package",
+    "summary": "Estimates the Force-of-Infection of a given pathogen from population based sero-prevalence studies",
+    "homepage": "https://github.com/epiverse-trace/serofoi",
     "topics": [
       "antibodies",
       "bayesian-methods",
@@ -552,31 +544,23 @@
       "r-package",
       "serological-surveys",
       "stan-language"
-    ],
-    "homepage": "https://github.com/epiverse-trace/serofoi"
-  },
-  {
-    "name": "Severity_methods_assessment",
-    "summary": "Assessment of severity estimation methods during an infectious disease outbreak",
-    "category": "r_package",
-    "homepage": "https://github.com/epiverse-trace/Severity_methods_assessment"
+    ]
   },
   {
     "name": "shinyapps-tracelac",
-    "summary": "",
     "category": "application",
     "homepage": "https://github.com/epiverse-trace/shinyapps-tracelac"
   },
   {
     "name": "showcasedata",
-    "summary": "",
     "category": "r_package",
     "homepage": "https://github.com/epiverse-trace/showcasedata"
   },
   {
     "name": "simulist",
-    "summary": "An R package for simulating line lists",
     "category": "r_package",
+    "summary": "An R package for simulating line lists",
+    "homepage": "https://github.com/epiverse-trace/simulist",
     "topics": [
       "epidemiology",
       "epiverse",
@@ -584,13 +568,13 @@
       "outbreaks",
       "r",
       "r-package"
-    ],
-    "homepage": "https://github.com/epiverse-trace/simulist"
+    ]
   },
   {
     "name": "sivirep",
-    "summary": "Data Wrangling and Automated Reports from 'SIVIGILA' source",
     "category": "r_package",
+    "summary": "Data Wrangling and Automated Reports from 'SIVIGILA' source",
+    "homepage": "https://github.com/epiverse-trace/sivirep",
     "topics": [
       "colombia",
       "epidemiological-surveillance",
@@ -598,38 +582,36 @@
       "public-health",
       "r",
       "r-package"
-    ],
-    "homepage": "https://github.com/epiverse-trace/sivirep"
+    ]
   },
   {
     "name": "superspreading",
-    "summary": "Estimation of individual-level variation in transmission",
     "category": "r_package",
+    "summary": "Estimation of individual-level variation in transmission",
+    "homepage": "https://github.com/epiverse-trace/superspreading",
     "topics": [
       "disease-transmission",
       "epidemiology",
       "epiverse",
       "r",
       "r-package"
-    ],
-    "homepage": "https://github.com/epiverse-trace/superspreading"
+    ]
   },
   {
     "name": "tracetheme",
-    "summary": "ggplot theme and scale for Epiverse-TRACE plots",
     "category": "r_package",
+    "summary": "ggplot theme and scale for Epiverse-TRACE plots",
     "homepage": "https://github.com/epiverse-trace/tracetheme"
   },
   {
     "name": "translation-epitkit",
-    "summary": "",
     "category": "r_package",
     "homepage": "https://github.com/epiverse-trace/translation-epitkit"
   },
   {
     "name": "tutorials",
-    "summary": "",
     "category": "r_package",
+    "homepage": "https://github.com/epiverse-trace/tutorials",
     "topics": [
       "carpentries-workbench",
       "english-language",
@@ -637,13 +619,13 @@
       "outbreak-analysis",
       "pre-alpha",
       "rstats"
-    ],
-    "homepage": "https://github.com/epiverse-trace/tutorials"
+    ]
   },
   {
     "name": "tutorials-early",
-    "summary": "Tutorials to learn reading, cleaning and validating case data, and converting line list data to incidence for visualizing epidemic curves.",
     "category": "r_package",
+    "summary": "Tutorials to learn reading, cleaning and validating case data, and converting line list data to incidence for visualizing epidemic curves.",
+    "homepage": "https://github.com/epiverse-trace/tutorials-early",
     "topics": [
       "carpentries-workbench",
       "data-cleaning",
@@ -654,19 +636,19 @@
       "exploratory-data-analysis",
       "outbreak-analysis",
       "rstats"
-    ],
-    "homepage": "https://github.com/epiverse-trace/tutorials-early"
+    ]
   },
   {
     "name": "tutorials-early-fr",
-    "summary": "Tutorials to learn reading, cleaning and validating case data, and converting line list data to incidence for visualizing epidemic curves.",
     "category": "r_package",
+    "summary": "Tutorials to learn reading, cleaning and validating case data, and converting line list data to incidence for visualizing epidemic curves.",
     "homepage": "https://github.com/epiverse-trace/tutorials-early-fr"
   },
   {
     "name": "tutorials-late",
-    "summary": "Tutorials to learn accessing and analyzing social contact matrices, scenario modelling to simulate disease spread and investigate interventions, and modelling disease burden.",
     "category": "r_package",
+    "summary": "Tutorials to learn accessing and analyzing social contact matrices, scenario modelling to simulate disease spread and investigate interventions, and modelling disease burden.",
+    "homepage": "https://github.com/epiverse-trace/tutorials-late",
     "topics": [
       "burden-of-disease",
       "carpentries-workbench",
@@ -679,13 +661,13 @@
       "rstats",
       "scenario-modelling",
       "vaccination"
-    ],
-    "homepage": "https://github.com/epiverse-trace/tutorials-late"
+    ]
   },
   {
     "name": "tutorials-middle",
-    "summary": "Tutorials to learn real-time analysis that includes accessing epidemiological delays, estimating transmission metrics, forecasting, and severity from aggregated incidence data, superspreading from line list and contact data, and simulating transmission chains.",
     "category": "r_package",
+    "summary": "Tutorials to learn real-time analysis that includes accessing epidemiological delays, estimating transmission metrics, forecasting, and severity from aggregated incidence data, superspreading from line list and contact data, and simulating transmission chains.",
+    "homepage": "https://github.com/epiverse-trace/tutorials-middle",
     "topics": [
       "carpentries-workbench",
       "english-language",
@@ -698,38 +680,36 @@
       "rstats",
       "superspreading-events",
       "transmission-chain"
-    ],
-    "homepage": "https://github.com/epiverse-trace/tutorials-middle"
+    ]
   },
   {
     "name": "tutorials-middle-es",
-    "summary": "",
     "category": "training",
     "homepage": "https://github.com/epiverse-trace/tutorials-middle-es"
   },
   {
     "name": "tutorials-middle-fr",
-    "summary": "Tutorials to learn real-time analysis that includes accessing epidemiological delays, estimating transmission metrics, forecasting, and severity from aggregated incidence data, superspreading from line list and contact data, and simulating transmission chains.",
     "category": "r_package",
+    "summary": "Tutorials to learn real-time analysis that includes accessing epidemiological delays, estimating transmission metrics, forecasting, and severity from aggregated incidence data, superspreading from line list and contact data, and simulating transmission chains.",
     "homepage": "https://github.com/epiverse-trace/tutorials-middle-fr"
   },
   {
     "name": "vaccineff",
-    "summary": "R package with tools for estimating vaccine effectiveness and vaccine related metrics",
     "category": "r_package",
+    "summary": "R package with tools for estimating vaccine effectiveness and vaccine related metrics",
+    "homepage": "https://github.com/epiverse-trace/vaccineff",
     "topics": [
       "epidemiology",
       "epiverse",
       "r",
       "r-package",
       "vaccine-effectiveness"
-    ],
-    "homepage": "https://github.com/epiverse-trace/vaccineff"
+    ]
   },
   {
     "name": "varnish",
-    "summary": "Epiverse-TRACE fork of the Carpentries' workbench varnish package",
     "category": "repository",
+    "summary": "Epiverse-TRACE fork of the Carpentries' workbench varnish package",
     "homepage": "https://github.com/epiverse-trace/varnish"
   }
 ]

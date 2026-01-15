@@ -10,12 +10,17 @@ from typing import Any, Dict, Mapping, MutableMapping, Optional, Sequence
 
 import pandas as pd
 
+try:  # pragma: no cover - optional dependency
+    import numpy as np
+except ImportError:  # pragma: no cover - numpy not strictly required
+    np = None
+
 from .registry import get_registry
 
 try:  # pragma: no cover - optional dependency guard
     import rpy2.robjects as ro
     from rpy2.robjects import default_converter
-    from rpy2.robjects.conversion import localconverter
+    from rpy2.robjects.conversion import get_conversion, localconverter
     from rpy2.robjects.packages import importr
     from rpy2.robjects import pandas2ri
 except ImportError as exc:  # pragma: no cover - optional dependency
@@ -24,7 +29,12 @@ except ImportError as exc:  # pragma: no cover - optional dependency
         "and ensure that R is available in your environment."
     ) from exc
 
-pandas2ri.activate()
+try:
+    pandas2ri.activate()
+except DeprecationWarning:
+    # Newer rpy2 versions raise DeprecationWarning as an exception; the
+    # conversion context below already handles pandas objects so we can ignore.
+    pass
 
 
 @dataclass
@@ -93,11 +103,9 @@ def call_epiverse_function(
     try:
         if auto_convert:
             with localconverter(default_converter + pandas2ri.converter):
-                r_args = [ro.conversion.py2rpy(arg) for arg in positional_args]
-                r_kwargs = {key: ro.conversion.py2rpy(val) for key, val in keyword_args.items()}
-            result = r_callable(*r_args, **r_kwargs)
-            with localconverter(default_converter + pandas2ri.converter):
-                converted = ro.conversion.rpy2py(result)
+                result = r_callable(*positional_args, **keyword_args)
+                conversion = get_conversion()
+                converted = conversion.rpy2py(result)
         else:
             converted = r_callable(*positional_args, **keyword_args)
     except Exception as err:  # pragma: no cover - runtime safety
@@ -125,6 +133,8 @@ def _serialise_data(data: Any) -> Any:
         return {"type": "dataframe", "records": data.to_dict(orient="records")}
     if isinstance(data, pd.Series):
         return {"type": "series", "values": data.to_dict()}
+    if np is not None and isinstance(data, np.ndarray):
+        return {"type": "array", "values": data.tolist()}
     if isinstance(data, (list, dict, str, int, float, bool)) or data is None:
         return data
     if isinstance(data, Path):

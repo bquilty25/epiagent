@@ -11,7 +11,7 @@ import urllib.request
 __all__ = ["EpiverseRegistry", "get_registry", "EpiversePackage"]
 
 ORG = "epiverse-trace"
-DEFAULT_REGISTRY_PATH = Path(__file__).resolve().parents[2] / "docs" / "epiverse_packages.json"
+DEFAULT_REGISTRY_PATH = Path(__file__).resolve().parents[3] / "docs" / "epiverse_packages.json"
 
 
 @dataclass

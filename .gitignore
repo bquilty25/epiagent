@@ -1,2 +1,5 @@
+*.pyc
+__pycache__/
 .venv/
-src/epiagent.egg-info/
+*.egg-info/
+.pytest_cache/

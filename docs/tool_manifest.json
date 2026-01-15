@@ -45,5 +45,172 @@
       },
       "required": ["package", "function"]
     }
+  },
+  {
+    "name": "ingest_repository",
+    "description": "Analyze a Git repository and return structured data for AI processing. Converts repository code into a text digest with metadata, directory structure, and file contents optimized for LLM consumption.",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "repository_url": {
+          "type": "string",
+          "description": "URL of the Git repository to analyze (e.g., https://github.com/user/repo)."
+        },
+        "include_patterns": {
+          "type": "array",
+          "description": "Unix shell-style patterns for files to include (e.g., ['*.py', '*.R', '*.md']).",
+          "items": {"type": "string"}
+        },
+        "exclude_patterns": {
+          "type": "array",
+          "description": "Unix shell-style patterns for files to exclude (e.g., ['node_modules/*', '*.log']).",
+          "items": {"type": "string"}
+        },
+        "max_file_size": {
+          "type": "integer",
+          "description": "Maximum file size in bytes to process (default: no limit)."
+        },
+        "branch": {
+          "type": "string",
+          "description": "Specific branch to analyze (defaults to repository's default branch)."
+        },
+        "token": {
+          "type": "string",
+          "description": "GitHub personal access token for private repositories."
+        },
+        "output_path": {
+          "type": "string",
+          "description": "Path to save the digest file (if not provided, returns structured data only)."
+        }
+      },
+      "required": ["repository_url"]
+    }
+  },
+  {
+    "name": "ingest_repository_async",
+    "description": "Asynchronously analyze a Git repository for AI processing. Recommended for batch processing or when integrating with async AI services.",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "repository_url": {
+          "type": "string",
+          "description": "URL of the Git repository to analyze (e.g., https://github.com/user/repo)."
+        },
+        "include_patterns": {
+          "type": "array",
+          "description": "Unix shell-style patterns for files to include (e.g., ['*.py', '*.R', '*.md']).",
+          "items": {"type": "string"}
+        },
+        "exclude_patterns": {
+          "type": "array",
+          "description": "Unix shell-style patterns for files to exclude (e.g., ['node_modules/*', '*.log']).",
+          "items": {"type": "string"}
+        },
+        "max_file_size": {
+          "type": "integer",
+          "description": "Maximum file size in bytes to process (default: no limit)."
+        },
+        "branch": {
+          "type": "string",
+          "description": "Specific branch to analyze (defaults to repository's default branch)."
+        },
+        "token": {
+          "type": "string",
+          "description": "GitHub personal access token for private repositories."
+        },
+        "output_path": {
+          "type": "string",
+          "description": "Path to save the digest file (if not provided, returns structured data only)."
+        }
+      },
+      "required": ["repository_url"]
+    }
+  },
+  {
+    "name": "batch_ingest_repositories",
+    "description": "Analyze multiple Git repositories in batch. Useful for processing multiple Epiverse packages or related repositories simultaneously.",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "repository_urls": {
+          "type": "array",
+          "description": "List of repository URLs to analyze.",
+          "items": {"type": "string"}
+        },
+        "include_patterns": {
+          "type": "array",
+          "description": "Unix shell-style patterns for files to include (e.g., ['*.py', '*.R', '*.md']).",
+          "items": {"type": "string"}
+        },
+        "exclude_patterns": {
+          "type": "array",
+          "description": "Unix shell-style patterns for files to exclude (e.g., ['node_modules/*', '*.log']).",
+          "items": {"type": "string"}
+        },
+        "max_file_size": {
+          "type": "integer",
+          "description": "Maximum file size in bytes to process (default: no limit)."
+        },
+        "branch": {
+          "type": "string",
+          "description": "Specific branch to analyze (defaults to repository's default branch)."
+        },
+        "token": {
+          "type": "string",
+          "description": "GitHub personal access token for private repositories."
+        },
+        "output_dir": {
+          "type": "string",
+          "description": "Directory to save individual digest files (if not provided, returns structured data only)."
+        }
+      },
+      "required": ["repository_urls"]
+    }
+  },
+  {
+    "name": "batch_ingest_repositories_async",
+    "description": "Asynchronously analyze multiple Git repositories in batch with concurrency control. Recommended for processing large numbers of repositories efficiently.",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "repository_urls": {
+          "type": "array",
+          "description": "List of repository URLs to analyze.",
+          "items": {"type": "string"}
+        },
+        "include_patterns": {
+          "type": "array",
+          "description": "Unix shell-style patterns for files to include (e.g., ['*.py', '*.R', '*.md']).",
+          "items": {"type": "string"}
+        },
+        "exclude_patterns": {
+          "type": "array",
+          "description": "Unix shell-style patterns for files to exclude (e.g., ['node_modules/*', '*.log']).",
+          "items": {"type": "string"}
+        },
+        "max_file_size": {
+          "type": "integer",
+          "description": "Maximum file size in bytes to process (default: no limit)."
+        },
+        "branch": {
+          "type": "string",
+          "description": "Specific branch to analyze (defaults to repository's default branch)."
+        },
+        "token": {
+          "type": "string",
+          "description": "GitHub personal access token for private repositories."
+        },
+        "output_dir": {
+          "type": "string",
+          "description": "Directory to save individual digest files (if not provided, returns structured data only)."
+        },
+        "max_concurrent": {
+          "type": "integer",
+          "description": "Maximum number of concurrent ingestions (default: 5).",
+          "default": 5
+        }
+      },
+      "required": ["repository_urls"]
+    }
   }
 ]
