@@ -1,5 +1,33 @@
+# Python
 *.pyc
 __pycache__/
-.venv/
 *.egg-info/
+*.egg
 .pytest_cache/
+*.py[cod]
+*$py.class
+
+# Virtual environments
+.venv/
+venv/
+ENV/
+env/
+
+# IDE - keep .vscode/ for MCP config
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Package management
+uv.lock
+dist/
+build/
+
+# Temporary files
+*.log
+*.tmp

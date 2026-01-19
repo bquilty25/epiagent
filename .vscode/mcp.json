@@ -1,0 +1,9 @@
+{
+  "inputs": [],
+  "servers": {
+    "epiagent": {
+      "command": "${workspaceFolder}/.venv/bin/python",
+      "args": ["-m", "epiagent"]
+    }
+  }
+}

@@ -7,7 +7,7 @@ name = "epiagent"
 version = "0.1.0"
 description = "Dynamic wrappers that expose Epiverse Trace R packages to Python LLM agents."
 readme = "README.md"
-requires-python = ">=3.9"
+requires-python = ">=3.10"
 license = { text = "Apache-2.0" }
 authors = [
   { name = "Epiverse Trace", email = "trace@epiverse.org" }
@@ -16,6 +16,7 @@ dependencies = [
   "pandas>=1.5",
   "rpy2>=3.6",
   "gitingest>=0.3.0",
+  "fastmcp<3",
 ]
 
 [project.optional-dependencies]
