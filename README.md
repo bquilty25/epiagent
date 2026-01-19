@@ -30,15 +30,6 @@ A Model Context Protocol (MCP) server that enables AI agents to use [Epiverse Tr
    @workspace What Epiverse packages can help estimate CFR?
    ```
 
-## Roadmap
-
-- [x] **Package registry** – 67+ Epiverse packages with metadata, tags, categories
-- [x] **Epiverse-first routing** – `find_relevant_packages()` matches queries to packages
-- [x] **R function execution** – Call any R function via `rpy2` with structured I/O
-- [x] **Codebase analysis** – GitIngest creates AI-readable digests of repos
-- [ ] **Agentic orchestration** – Context management and multi-step reasoning
-- [ ] **Evaluation framework** – Benchmarks for epidemiological tasks
-
 ## Usage with GitHub Copilot
 
 After installation, the MCP server exposes 4 tools to Copilot:
