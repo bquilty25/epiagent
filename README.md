@@ -22,7 +22,10 @@ A Model Context Protocol (MCP) server that enables AI agents to use [Epiverse Tr
 3. **Configure MCP in VS Code:**
    - The `.vscode/mcp.json` file is already included
    - Reload VS Code: `Cmd+Shift+P` → "Developer: Reload Window"
-   - Open Copilot Chat and verify tools: `@workspace /tools`
+   - Open Copilot Chat
+   - Click "Configure tools" (icon in chat interface)
+   - Search for "epiagent"
+   - Check the box to enable the tools
 
 4. **Start using:**
    Ask Copilot questions like:
@@ -45,9 +48,10 @@ See [docs/ebola-outbreak-analysis.md](docs/ebola-outbreak-analysis.md) for a com
 
 If tools don't appear in Copilot Chat:
 
-1. Check `.vscode/mcp.json` has the correct Python path
-2. Reload VS Code: `Cmd+Shift+P` → "Developer: Reload Window"
-3. Check Output panel: `Cmd+Shift+U` → "GitHub Copilot Chat"
+1. Reload VS Code: `Cmd+Shift+P` → "Developer: Reload Window"
+2. In Copilot Chat, click "Configure tools" and enable "epiagent"
+3. Check `.vscode/mcp.json` has the correct Python path
+4. Check Output panel: `Cmd+Shift+U` → "GitHub Copilot Chat"
 
 For user-level configuration (optional), add to VS Code User Settings:
 
