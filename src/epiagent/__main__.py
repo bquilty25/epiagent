@@ -29,9 +29,31 @@ with suppress_stdout():
         ingest_repository,
         list_epiverse_packages,
     )
+    from pathlib import Path
 
     # Initialize FastMCP server
     mcp = FastMCP("epiagent")
+    
+    # Path to SOP document
+    SOP_PATH = Path(__file__).resolve().parents[2] / "docs" / "SOP_epidemiological_analysis.md"
+
+@mcp.resource("epiagent://sop")
+def get_analysis_sop() -> str:
+    """Return the Standard Operating Procedure for epidemiological analysis."""
+    if SOP_PATH.exists():
+        return SOP_PATH.read_text(encoding="utf-8")
+    return "SOP document not found."
+
+@mcp.prompt("standard_operating_procedure")
+def sop_prompt() -> list:
+    """Return the Standard Operating Procedure for epidemiological analysis as a prompt."""
+    return [{
+        "role": "user",
+        "content": {
+            "type": "text",
+            "text": f"Please follow the Standard Operating Procedure for this analysis:\n\n{get_analysis_sop()}"
+        }
+    }]
 
 
 @mcp.tool()

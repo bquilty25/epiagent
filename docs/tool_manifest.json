@@ -43,7 +43,10 @@
           "default": true
         }
       },
-      "required": ["package", "function"]
+      "required": [
+        "package",
+        "function"
+      ]
     }
   },
   {
@@ -59,12 +62,16 @@
         "include_patterns": {
           "type": "array",
           "description": "Unix shell-style patterns for files to include (e.g., ['*.py', '*.R', '*.md']).",
-          "items": {"type": "string"}
+          "items": {
+            "type": "string"
+          }
         },
         "exclude_patterns": {
           "type": "array",
           "description": "Unix shell-style patterns for files to exclude (e.g., ['node_modules/*', '*.log']).",
-          "items": {"type": "string"}
+          "items": {
+            "type": "string"
+          }
         },
         "max_file_size": {
           "type": "integer",
@@ -83,7 +90,9 @@
           "description": "Path to save the digest file (if not provided, returns structured data only)."
         }
       },
-      "required": ["repository_url"]
+      "required": [
+        "repository_url"
+      ]
     }
   },
   {
@@ -99,12 +108,16 @@
         "include_patterns": {
           "type": "array",
           "description": "Unix shell-style patterns for files to include (e.g., ['*.py', '*.R', '*.md']).",
-          "items": {"type": "string"}
+          "items": {
+            "type": "string"
+          }
         },
         "exclude_patterns": {
           "type": "array",
           "description": "Unix shell-style patterns for files to exclude (e.g., ['node_modules/*', '*.log']).",
-          "items": {"type": "string"}
+          "items": {
+            "type": "string"
+          }
         },
         "max_file_size": {
           "type": "integer",
@@ -123,7 +136,9 @@
           "description": "Path to save the digest file (if not provided, returns structured data only)."
         }
       },
-      "required": ["repository_url"]
+      "required": [
+        "repository_url"
+      ]
     }
   },
   {
@@ -135,17 +150,23 @@
         "repository_urls": {
           "type": "array",
           "description": "List of repository URLs to analyze.",
-          "items": {"type": "string"}
+          "items": {
+            "type": "string"
+          }
         },
         "include_patterns": {
           "type": "array",
           "description": "Unix shell-style patterns for files to include (e.g., ['*.py', '*.R', '*.md']).",
-          "items": {"type": "string"}
+          "items": {
+            "type": "string"
+          }
         },
         "exclude_patterns": {
           "type": "array",
           "description": "Unix shell-style patterns for files to exclude (e.g., ['node_modules/*', '*.log']).",
-          "items": {"type": "string"}
+          "items": {
+            "type": "string"
+          }
         },
         "max_file_size": {
           "type": "integer",
@@ -164,7 +185,9 @@
           "description": "Directory to save individual digest files (if not provided, returns structured data only)."
         }
       },
-      "required": ["repository_urls"]
+      "required": [
+        "repository_urls"
+      ]
     }
   },
   {
@@ -176,17 +199,23 @@
         "repository_urls": {
           "type": "array",
           "description": "List of repository URLs to analyze.",
-          "items": {"type": "string"}
+          "items": {
+            "type": "string"
+          }
         },
         "include_patterns": {
           "type": "array",
           "description": "Unix shell-style patterns for files to include (e.g., ['*.py', '*.R', '*.md']).",
-          "items": {"type": "string"}
+          "items": {
+            "type": "string"
+          }
         },
         "exclude_patterns": {
           "type": "array",
           "description": "Unix shell-style patterns for files to exclude (e.g., ['node_modules/*', '*.log']).",
-          "items": {"type": "string"}
+          "items": {
+            "type": "string"
+          }
         },
         "max_file_size": {
           "type": "integer",
@@ -210,7 +239,9 @@
           "default": 5
         }
       },
-      "required": ["repository_urls"]
+      "required": [
+        "repository_urls"
+      ]
     }
   }
 ]
