@@ -10,7 +10,7 @@ This project is built on two powerful open standards for agentic AI:
 
 1.  **[Model Context Protocol (MCP)](https://modelcontextprotocol.io/)**: An open standard that enables AI agents to connect to data and tools. `epiagent` is a fully compliant MCP server, making it compatible with any MCP client (VS Code, Claude Desktop, formatting_agents, etc.).
 
-2.  **[Agent Skills](https://antigravity.google/docs/skills)**: A standard for defining portable, structured capabilities for agents. The "Standard Operating Procedure" for this project is implemented as a formal **Skill** (`.agent/skills/epidemiological_analysis`), ensuring the agent has persistent, explicit instructions on how to conduct high-quality analysis.
+2.  **[Agent Skills](https://agentskills.io)**: A standard for defining portable, structured capabilities for agents. The "Standard Operating Procedure" for this project is implemented as a formal **Skill** (`.agent/skills/epidemiological_analysis`), ensuring the agent has persistent, explicit instructions on how to conduct high-quality analysis.
 
 ## Installation & Getting Started
 
