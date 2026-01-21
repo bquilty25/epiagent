@@ -98,7 +98,11 @@ def ingest_repository(
                     pass
             elif line.startswith('Estimated tokens:'):
                 try:
-                    estimated_tokens = int(line.split(':')[1].strip().replace('k', '000'))
+                    val = line.split(':')[1].strip()
+                    if 'k' in val:
+                        estimated_tokens = int(float(val.replace('k', '')) * 1000)
+                    else:
+                        estimated_tokens = int(val)
                 except (ValueError, IndexError):
                     pass
         
@@ -191,7 +195,11 @@ async def ingest_repository_async(
                     pass
             elif line.startswith('Estimated tokens:'):
                 try:
-                    estimated_tokens = int(line.split(':')[1].strip().replace('k', '000'))
+                    val = line.split(':')[1].strip()
+                    if 'k' in val:
+                        estimated_tokens = int(float(val.replace('k', '')) * 1000)
+                    else:
+                        estimated_tokens = int(val)
                 except (ValueError, IndexError):
                     pass
         

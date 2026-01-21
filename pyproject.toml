@@ -20,7 +20,7 @@ dependencies = [
 ]
 
 [project.optional-dependencies]
-dev = ["pytest", "pytest-cov"]
+dev = ["pytest", "pytest-cov", "pytest-asyncio"]
 
 [project.urls]
 Homepage = "https://github.com/epiverse-trace"
@@ -31,3 +31,5 @@ where = ["src"]
 [tool.pytest.ini_options]
 addopts = "-ra"
 testpaths = ["tests"]
+asyncio_mode = "auto"
+asyncio_default_fixture_loop_scope = "function"

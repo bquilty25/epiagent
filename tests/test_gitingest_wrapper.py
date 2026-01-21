@@ -292,6 +292,13 @@ class TestImportError:
     @patch('epiagent.tools.gitingest_wrapper.ingest', None)
     def test_import_error_without_gitingest(self):
         """Test that ImportError is raised when gitingest is not available."""
+        import sys
+        import importlib
+        from epiagent.tools import gitingest_wrapper
+        
         with patch.dict('sys.modules', {'gitingest': None}):
             with pytest.raises(ImportError, match="gitingest is required"):
-                from epiagent.tools.gitingest_wrapper import ingest_repository
+                importlib.reload(gitingest_wrapper)
+        
+        # Restore module for other tests
+        importlib.reload(gitingest_wrapper)
