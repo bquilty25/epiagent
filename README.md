@@ -1,86 +1,57 @@
 # epiagent
 
-> **🚧 Work in Progress**
+[![Lifecycle: Experimental](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://lifecycle.r-lib.org/articles/stages.html#experimental)
 
-A Model Context Protocol (MCP) server that enables AI agents to use [Epiverse Trace](https://epiverse-trace.github.io/) R packages for epidemiological analysis.
 
-## Open Standards
+**A Model Context Protocol (MCP) server that empowers AI agents to perform high-quality epidemiological analysis using the [Epiverse-TRACE](https://epiverse-trace.github.io/) ecosystem.**
 
-This project is built on two powerful open standards for agentic AI:
+`epiagent` bridges the gap between Large Language Models and rigorous epidemiological tools. It provides agents with semantic access to R packages (like `linelist` and `epiparameter`) and safeguards their workflow with professional Standard Operating Procedures (Agent Skills).
 
-1.  **[Model Context Protocol (MCP)](https://modelcontextprotocol.io/)**: An open standard that enables AI agents to connect to data and tools. `epiagent` is a fully compliant MCP server, making it compatible with any MCP client (VS Code, Claude Desktop, formatting_agents, etc.).
-
-2.  **[Agent Skills](https://agentskills.io)**: A standard for defining portable, structured capabilities for agents. The "Standard Operating Procedure" for this project is implemented as a formal **Skill** (`.agent/skills/epidemiological_analysis`), ensuring the agent has persistent, explicit instructions on how to conduct high-quality analysis.
-
-## Installation & Getting Started
+## Installation
 
 ### 1. Zero-Config Setup (Recommended)
-This method is fastest and ensures all dependencies are correctly locked.
+Fastest method using `uv`.
 
-1. **Clone the repository**:
-   ```bash
-   git clone https://github.com/bquilty25/epiagent.git
-   cd epiagent
-   ```
-2. **Install with `uv`**:
-   ```bash
-   uv sync
-   ```
-3. **Open in VS Code**:
-   ```bash
-   code .
-   ```
-   The `.vscode/mcp.json` is pre-configured to work immediately.
+```bash
+git clone https://github.com/bquilty25/epiagent.git
+cd epiagent
+uv sync
+code .  # Opens VS Code with pre-configured settings
+```
 
 ### 2. Manual Setup
-If you prefer standard pip:
+Standard pip installation.
 
-1. Create a virtual environment:
-   ```bash
-   python3 -m venv .venv
-   source .venv/bin/activate
-   ```
-2. Install dependencies:
-   ```bash
-   pip install -e ".[dev]"
-   ```
-3. Reload VS Code (`Cmd+Shift+P` → "Developer: Reload Window").
+```bash
+python3 -m venv .venv
+source .venv/bin/activate
+pip install -e ".[dev]"
+# Reload VS Code window to apply changes
+```
 
-### 3. Usage with GitHub Copilot
-Once installed:
-1. Open Copilot Chat.
-2. Ensure the **epiagent** tool is enabled (click "Configure tools").
-3. Ask natural language questions like:
-   > `@workspace What Epiverse packages can help estimate CFR?`
+## Usage
 
-### 4. Usage with Claude Desktop / Claude Code
-To use `epiagent` with Anthropic's Claude Desktop app or CLI:
+### GitHub Copilot
+1.  **Open Copilot Chat** in VS Code.
+2.  Enable the **epiagent** tool (via "Configure tools").
+3.  Ask: *"@workspace Which Epiverse package handles contact tracing data?"*
 
-1. Open your Claude configuration file:
-   - **macOS**: `~/Library/Application Support/Claude/claude_desktop_config.json`
-   - **Windows**: `%APPDATA%\Claude\claude_desktop_config.json`
+### Claude Desktop / CLI
+Add to your Claude config (`~/Library/Application Support/Claude/claude_desktop_config.json` on macOS):
 
-2. Add the `epiagent` server configuration (using the absolute path to your repo):
+```json
+{
+  "mcpServers": {
+    "epiagent": {
+      "command": "/ABSOLUTE/PATH/TO/epiagent/.venv/bin/python",
+      "args": ["-m", "epiagent"]
+    }
+  }
+}
+```
 
-   ```json
-   {
-     "mcpServers": {
-       "epiagent": {
-         "command": "/ABSOLUTE/PATH/TO/epiagent/.venv/bin/python",
-         "args": ["-m", "epiagent"]
-       }
-     }
-   }
-   ```
-3. Restart Claude Desktop. The 🛠️ icon will appear, listing the Epiverse tools.
-
-### Using Epiagent in Other Repositories
-
-You can use `epiagent` while working in *any* other project (e.g., your specific analysis repo) by pointing VS Code to this installation.
-
-1. **Open your analysis project** in VS Code.
-2. Create or edit `.vscode/mcp.json`.
-3. Add the `epiagent` configuration, pointing to the absolute path where you installed `epiagent`:
+### Remote / Cross-Repo Usage
+To use `epiagent` while working in *another* analysis repository, configure that repo's `.vscode/mcp.json` to point here:
 
 ```json
 {
@@ -94,43 +65,17 @@ You can use `epiagent` while working in *any* other project (e.g., your specific
 }
 ```
 
-This allows you to access all Epiverse tools and the Standard Operating Procedure regardless of which folder you have open.
+## Features
 
-For user-level configuration (optional), add to VS Code User Settings:
+| Function                              | Description                                                                       |
+| :------------------------------------ | :-------------------------------------------------------------------------------- |
+| **`find_relevant_packages(query)`**   | Semantically matches user questions to the most relevant Epiverse TRACE packages. |
+| **`list_epiverse_packages()`**        | Provides metadata on all available Epiverse tools.                                |
+| **`call_epiverse_function(pkg, fn)`** | Safely executes R functions from Python via `rpy2`.                               |
+| **`ingest_repository(url)`**          | Creates AI-optimized digests of external codebases.                               |
 
-```json
-{
-  "github.copilot.chat.mcp.enabled": true,
-  "github.copilot.chat.mcp.servers": {
-    "epiagent": {
-      "command": "/FULL/PATH/TO/epiagent/.venv/bin/python",
-      "args": ["-m", "epiagent"],
-      "cwd": "/FULL/PATH/TO/epiagent"
-    }
-  }
-}
-```
+## Open Standards
 
-## Python API Usage
-
-```python
-from epiagent import find_relevant_packages, call_epiverse_function
-
-# 1. Find relevant Epiverse package
-matches = find_relevant_packages("estimate CFR for COVID-19")
-# → cfr (score=10.5), serofoi (4.0), ...
-
-# 2. Call R function
-result = call_epiverse_function("epiparameter", "epiparameter_db", 
-    kwargs={"disease": "COVID-19", "epi_name": "incubation period"})
-# → 15 COVID-19 incubation period distributions
-```
-
-## Tools
-
-| Function                          | Description                         |
-| --------------------------------- | ----------------------------------- |
-| `find_relevant_packages(query)`   | Match queries to Epiverse packages  |
-| `list_epiverse_packages()`        | List all 67+ packages with metadata |
-| `call_epiverse_function(pkg, fn)` | Execute R function via rpy2         |
-| `ingest_repository(url)`          | Create AI-readable codebase digest  |
+This project is built on:
+*   **[Model Context Protocol (MCP)](https://modelcontextprotocol.io/)**: For universal tool connectivity.
+*   **[Agent Skills](https://agentskills.io)**: For defining portable, professional analytical workflows (see `.agent/skills/epidemiological_analysis`).
