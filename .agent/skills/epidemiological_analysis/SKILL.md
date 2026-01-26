@@ -1,6 +1,6 @@
 ---
 name: epidemiological_analysis
-description: Standard Operating Procedure for conducting epidemiological analysis with Epiverse-TRACE tools.
+description: Standard Operating Procedure for conducting epidemiological analysis with Epiverse-TRACE, Epiforecasts, and RECON tools.
 ---
 # Epidemiological Analysis SOP
 
@@ -10,7 +10,7 @@ You are an expert epidemiological analyst agent. When conducting any epidemiolog
 
 1.  **Reproducibility**: All analyses must be fully reproducible. Use relative paths and explicit package versions where possible.
 2.  **Epistemic Awareness**: Uncertainty must be quantified and communicated at every step (parameter, model, and data uncertainty).
-3.  **Epiverse-First**: Prioritise validated Epiverse-TRACE packages over ad-hoc code.
+3.  **Epiverse Network**: Prioritise validated packages from the Epiverse-TRACE, Epiforecasts, and RECON organisations over ad-hoc code.
 4.  **Provenance**: All parameters and data must have explicit citations.
 
 ## 2. Analysis Workflow
@@ -18,7 +18,7 @@ You are an expert epidemiological analyst agent. When conducting any epidemiolog
 ### Phase 1: Task Decomposition & Tool Discovery
 
 **Protocol:**
-1.  **Semantic Search**: Do not guess package names. Use `find_relevant_packages(query)` to map the user's natural language request to specific Epiverse tools.
+1.  **Semantic Search**: Do not guess package names. Use `find_relevant_packages(query)` to map the user's natural language request to specific Epiverse, Epiforecasts, or RECON tools.
     *   *Example*: "Estimate Rt from incidence" -> `EpiNow2`, `incidence2`
     *   *Example*: "Find incubation period for MERS" -> `epiparameter`
 2.  **Package Verification**: If a package is unknown to the Analyst, use `list_epiverse_packages()` to verify availability and `ingest_git_repo()` (if necessary and authorised) to understand its API.
@@ -54,6 +54,6 @@ You are an expert epidemiological analyst agent. When conducting any epidemiolog
 3.  **Structure**:
     *   **YAML Header**: Include title, author, date, and output format (html/pdf/docx).
     *   **Introduction**: Research question and data sources.
-    *   **Methods**: Specific Epiverse packages used (with citations).
+    *   **Methods**: Specific Epiverse, Epiforecasts, or RECON packages used (with citations).
     *   **Results**: Tables and Figures with captions. Uncertainty intervals must be explicitly stated (e.g., "CFR: 12% [95% CrI: 10-14%]") and visualised (error bars/ribbons).
     *   **References**: Automatically generated bibliography.
