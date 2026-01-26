@@ -1,7 +1,7 @@
 [
   {
     "name": "list_epiverse_packages",
-    "description": "Return the cached catalogue of Epiverse Trace repositories (including summaries, topical tags, and coarse categories) that the agent can call into. Refresh the cache to pull the latest packages and metadata from GitHub.",
+    "description": "Return the cached catalogue of Epiverse Trace, Epiforecasts, and RECON repositories (including summaries, topical tags, and coarse categories) that the agent can call into. Refresh the cache to pull the latest packages and metadata from GitHub.",
     "parameters": {
       "type": "object",
       "properties": {
@@ -14,8 +14,24 @@
     }
   },
   {
+    "name": "get_packages",
+    "description": "Get all available Epiverse-TRACE, Epiforecasts, and RECON packages. Alias for list_epiverse_packages.",
+    "parameters": {
+      "type": "object",
+      "properties": {}
+    }
+  },
+  {
+    "name": "refresh_packages",
+    "description": "Refresh the package registry from GitHub and return a summary. This connects to GitHub to fetch the latest list of packages from Epiverse-TRACE, Epiforecasts, and RECON.",
+    "parameters": {
+      "type": "object",
+      "properties": {}
+    }
+  },
+  {
     "name": "call_epiverse_function",
-    "description": "Invoke any function from an Epiverse Trace R package via rpy2. Supports automatic conversion between pandas objects and R data frames. Use the package summaries returned by list_epiverse_packages to choose an appropriate target before calling.",
+    "description": "Invoke any function from an Epiverse Trace, Epiforecasts, or RECON R package via rpy2. Supports automatic conversion between pandas objects and R data frames. Use the package summaries returned by list_epiverse_packages to choose an appropriate target before calling.",
     "parameters": {
       "type": "object",
       "properties": {

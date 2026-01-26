@@ -24,6 +24,8 @@ def test_tool_manifest_content():
     
     expected_tools = [
         "list_epiverse_packages",
+        "get_packages",
+        "refresh_packages",
         "call_epiverse_function", 
         "ingest_repository",
         "ingest_repository_async",
