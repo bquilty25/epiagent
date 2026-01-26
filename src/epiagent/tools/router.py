@@ -1,8 +1,8 @@
 """Package router for matching user queries to relevant Epiverse packages.
 
 This module provides "Epiverse-first" routing: given a user query about
-epidemiological analysis, it finds the most relevant Epiverse packages
-before the agent attempts to write custom code.
+epidemiological analysis, it finds the most relevant Epiverse, Epiforecasts,
+or RECON packages before the agent attempts to write custom code.
 """
 
 from __future__ import annotations
@@ -73,7 +73,7 @@ TASK_KEYWORDS: Dict[str, List[str]] = {
 
 @dataclass
 class PackageMatch:
-    """Result of matching a query to an Epiverse package."""
+    """Result of matching a query to an Epiverse/Epiforecasts/RECON package."""
     
     package: EpiversePackage
     score: float
@@ -166,7 +166,7 @@ def find_relevant_packages(
     category_filter: Optional[str] = None,
     registry: Optional[EpiverseRegistry] = None,
 ) -> List[PackageMatch]:
-    """Find Epiverse packages relevant to a user query.
+    """Find Epiverse, Epiforecasts, or RECON packages relevant to a user query.
     
     Args:
         query: Natural language description of the epidemiological task

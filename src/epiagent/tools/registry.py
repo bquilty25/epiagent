@@ -10,7 +10,7 @@ import urllib.request
 
 __all__ = ["EpiverseRegistry", "get_registry", "EpiversePackage"]
 
-ORG = "epiverse-trace"
+ORGS = ["epiverse-trace", "epiforecasts", "reconhub"]
 DEFAULT_REGISTRY_PATH = Path(__file__).resolve().parents[3] / "docs" / "epiverse_packages.json"
 
 
@@ -19,6 +19,7 @@ class EpiversePackage:
     """Represents a single Epiverse Trace repository with optional metadata."""
 
     name: str
+    organization: str = "unknown"
     summary: str = ""
     category: str = "unknown"
     homepage: Optional[str] = None
@@ -27,6 +28,7 @@ class EpiversePackage:
     def to_dict(self) -> Dict[str, object]:
         payload: Dict[str, object] = {
             "name": self.name,
+            "organization": self.organization,
             "category": self.category,
         }
         if self.summary:
@@ -67,6 +69,7 @@ class EpiverseRegistry:
                 else:
                     package = EpiversePackage(
                         name=entry.get("name"),
+                        organization=entry.get("organization", "unknown"),
                         summary=entry.get("summary", ""),
                         category=entry.get("category", "unknown"),
                         homepage=entry.get("homepage"),
@@ -85,27 +88,30 @@ class EpiverseRegistry:
     def refresh_from_github(self, *, per_page: int = 100) -> List[EpiversePackage]:
         """Refresh the package list using the GitHub API."""
 
-        url = f"https://api.github.com/orgs/{ORG}/repos?per_page={per_page}"
-        repos = self._fetch_repo_page(url)
-        next_url = repos.next_url
-        all_repos = list(repos.items)
-        while next_url:
-            repos = self._fetch_repo_page(next_url)
-            all_repos.extend(repos.items)
-            next_url = repos.next_url
         refreshed: Dict[str, EpiversePackage] = {}
-        for repo in all_repos:
-            if repo.get("archived"):
-                continue
-            name = repo["name"]
-            package = self.packages.get(name, EpiversePackage(name=name))
-            package.category = package.category or "unknown"
-            package.merge(
-                summary=repo.get("description"),
-                topics=repo.get("topics"),
-                homepage=repo.get("html_url"),
-            )
-            refreshed[name] = package
+        for org in ORGS:
+            url = f"https://api.github.com/orgs/{org}/repos?per_page={per_page}"
+            repos = self._fetch_repo_page(url)
+            next_url = repos.next_url
+            all_repos = list(repos.items)
+            while next_url:
+                repos = self._fetch_repo_page(next_url)
+                all_repos.extend(repos.items)
+                next_url = repos.next_url
+
+            for repo in all_repos:
+                if repo.get("archived"):
+                    continue
+                name = repo["name"]
+                package = self.packages.get(name, EpiversePackage(name=name))
+                package.organization = org
+                package.category = package.category or "unknown"
+                package.merge(
+                    summary=repo.get("description"),
+                    topics=repo.get("topics"),
+                    homepage=repo.get("html_url"),
+                )
+                refreshed[name] = package
         self.packages = refreshed
         if self.source:
             self.save(self.source)

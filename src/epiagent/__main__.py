@@ -58,7 +58,7 @@ def sop_prompt() -> list:
 
 @mcp.tool()
 def list_packages(refresh: bool = False) -> dict:
-    """List all available Epiverse-TRACE packages.
+    """List all available Epiverse-TRACE, Epiforecasts, and RECON packages.
     
     Args:
         refresh: Whether to refresh the package registry from GitHub.
@@ -74,7 +74,7 @@ def call_function(
     args: list = None,
     kwargs: dict = None,
 ) -> dict:
-    """Call a function from an Epiverse-TRACE package.
+    """Call a function from an Epiverse, Epiforecasts, or RECON package.
     
     Args:
         package: Name of the R package (e.g., 'epiparameter').
@@ -88,7 +88,7 @@ def call_function(
 
 @mcp.tool()
 def find_tools(query: str) -> list:
-    """Find relevant Epiverse packages for a specific epidemiological task.
+    """Find relevant Epiverse, Epiforecasts, or RECON packages for a specific epidemiological task.
     
     Args:
         query: Natural language description of the task (e.g. "estimate incubation period").
