@@ -5,7 +5,7 @@
 
 **A Model Context Protocol (MCP) server that empowers AI agents to perform high-quality epidemiological analysis using the [Epiverse-TRACE](https://epiverse-trace.github.io/), [Epiforecasts](https://epiforecasts.io/), and [RECON](https://www.repidemicsconsortium.org/) ecosystems.**
 
-`epiagent` bridges the gap between Large Language Models and rigorous epidemiological tools. It provides agents with semantic access to R packages (like `linelist` and `epiparameter`) and safeguards their workflow with professional Standard Operating Procedures (Agent Skills).
+`epiagent` connects Large Language Models to R-based epidemiological tools. It gives agents semantic access to packages (like `linelist` and `epiparameter`) and guides their workflow using Standard Operating Procedures (Agent Skills).
 
 ## Installation
 
@@ -80,19 +80,3 @@ To use `epiagent` while working in *another* analysis repository, configure that
 This project is built on:
 *   **[Model Context Protocol (MCP)](https://modelcontextprotocol.io/)**: For universal tool connectivity.
 *   **[Agent Skills](https://agentskills.io)**: For defining portable, professional analytical workflows (see `.agent/skills/epidemiological_analysis`).
-
-## Customizing Agent Skills
-
-This project includes a reference implementation of an **Epidemiological Analysis Skill** (located in `.agent/skills/epidemiological_analysis/SKILL.md`). This skill serves as a "Standard Operating Procedure" (SOP) for the agent, ensuring it follows best practices like:
-*   Prioritizing verified packages.
-*   Quantifying uncertainty.
-*   Citing data sources.
-
-**You are encouraged to customize this skill!**
-
-Every organization has unique guidelines. You should edit `SKILL.md` to reflect your specific needs, for example:
-*   **Mandatory Citations**: Add a rule that all analysis must optionally cite specific internal policy documents.
-*   **Preferred Tools**: If your team prefers `ggplot2` over base R plotting, add that preference to the "Coding Standards" section.
-*   **Output Formats**: Change the required output format from Quarto to RMarkdown or plain script if needed.
-
-By modifying the skill file, you permanently improve the agent's behavior for your specific domain context.
