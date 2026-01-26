@@ -68,6 +68,30 @@ def list_packages(refresh: bool = False) -> dict:
 
 
 @mcp.tool()
+def get_packages() -> dict:
+    """Get all available Epiverse-TRACE, Epiforecasts, and RECON packages.
+    
+    Alias for list_packages.
+    """
+    return list_packages(refresh=False)
+
+
+@mcp.tool()
+def refresh_packages() -> str:
+    """Refresh the package registry from GitHub and return a summary.
+    
+    This connects to GitHub to fetch the latest list of packages from 
+    Epiverse-TRACE, Epiforecasts, and RECON.
+    """
+    result = list_epiverse_packages(refresh=True)
+    if result.status == "success":
+        count = len(result.data.get("packages", []))
+        return f"Registry refreshed. Found {count} packages."
+    else:
+        return f"Failed to refresh registry: {result.message}"
+
+
+@mcp.tool()
 def call_function(
     package: str,
     function: str,
