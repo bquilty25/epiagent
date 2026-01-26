@@ -1,7 +1,9 @@
 [
   {
     "name": ".github",
+    "organization": "epiforecasts",
     "category": "infrastructure",
+    "summary": "Default community files",
     "homepage": "https://github.com/epiverse-trace/.github",
     "topics": [
       "community-health",
@@ -15,6 +17,7 @@
   },
   {
     "name": "ColOpenData",
+    "organization": "epiverse-trace",
     "category": "r_package",
     "summary": "ColOpenData is a package that acquires and wrangles Colombian socioeconomic, geospatial and climate data",
     "homepage": "https://github.com/epiverse-trace/ColOpenData",
@@ -29,23 +32,206 @@
     ]
   },
   {
+    "name": "CovidAgeGroupForecast",
+    "organization": "epiforecasts",
+    "category": "unknown",
+    "homepage": "https://github.com/epiforecasts/CovidAgeGroupForecast"
+  },
+  {
+    "name": "CoxBazaar",
+    "organization": "reconhub",
+    "category": "unknown",
+    "summary": "Case study dealing with an outbreak of Diphtheria in Cox Bazaar, Bangladesh. Covers: Basic contact tracing, estimates of R/R0, Random Spatial Sampling and Sitrep Generation in Rmarkdown",
+    "homepage": "https://github.com/reconhub/CoxBazaar"
+  },
+  {
+    "name": "EOIM-Copenhagen",
+    "organization": "reconhub",
+    "category": "unknown",
+    "summary": "EPIET Outbreak Investigation Module: Copenhagen",
+    "homepage": "https://github.com/reconhub/EOIM-Copenhagen"
+  },
+  {
+    "name": "EOIM-Stegen",
+    "organization": "reconhub",
+    "category": "unknown",
+    "summary": "EPIET Outbreak Investigation Module: Copenhagen",
+    "homepage": "https://github.com/reconhub/EOIM-Stegen"
+  },
+  {
+    "name": "ESCAIDE_2019_workshop",
+    "organization": "reconhub",
+    "category": "unknown",
+    "summary": "The website of the R workshops for ESCAIDE 2019",
+    "homepage": "https://github.com/reconhub/ESCAIDE_2019_workshop"
+  },
+  {
+    "name": "Ebola-Expert-Elicitation",
+    "organization": "epiforecasts",
+    "category": "unknown",
+    "summary": "Evaluation of spatial forecasts made by humans and models at the end of the 2018-20 Ebola epidemic in North-Kivu, DRC",
+    "homepage": "https://github.com/epiforecasts/Ebola-Expert-Elicitation"
+  },
+  {
+    "name": "Ebola-Expert-Interviews",
+    "organization": "epiforecasts",
+    "category": "unknown",
+    "summary": "Analysis of the results from interviews with experts regarding the spatial spread of Ebola in North-Kivu (2019/20)",
+    "homepage": "https://github.com/epiforecasts/Ebola-Expert-Interviews"
+  },
+  {
+    "name": "EpiCastR",
+    "organization": "epiforecasts",
+    "category": "unknown",
+    "summary": "R package for spatial forecasting of infectious disease outbreaks",
+    "homepage": "https://github.com/epiforecasts/EpiCastR"
+  },
+  {
+    "name": "EpiForecastsUtils",
+    "organization": "epiforecasts",
+    "category": "unknown",
+    "homepage": "https://github.com/epiforecasts/EpiForecastsUtils"
+  },
+  {
+    "name": "EpiNow",
+    "organization": "epiforecasts",
+    "category": "unknown",
+    "summary": "Estimate Realtime Case Counts and Time-varying Epidemiological Parameters",
+    "homepage": "https://github.com/epiforecasts/EpiNow"
+  },
+  {
+    "name": "EpiNow2",
+    "organization": "epiforecasts",
+    "category": "unknown",
+    "summary": "Estimate Realtime Case Counts and Time-varying Epidemiological Parameters",
+    "homepage": "https://github.com/epiforecasts/EpiNow2",
+    "topics": [
+      "backcalculation",
+      "covid-19",
+      "gaussian-processes",
+      "open-source",
+      "reproduction-number",
+      "rstats",
+      "stan"
+    ]
+  },
+  {
+    "name": "EpiSoon",
+    "organization": "epiforecasts",
+    "category": "unknown",
+    "summary": "Forecasting the effective reproduction number over short timescales",
+    "homepage": "https://github.com/epiforecasts/EpiSoon",
+    "topics": [
+      "case-forecasts",
+      "forecasts"
+    ]
+  },
+  {
     "name": "EpiTKit-EN",
+    "organization": "epiverse-trace",
     "category": "r_package",
     "homepage": "https://github.com/epiverse-trace/EpiTKit-EN"
   },
   {
     "name": "EpiTKit-FR",
+    "organization": "epiverse-trace",
     "category": "r_package",
     "homepage": "https://github.com/epiverse-trace/EpiTKit-FR"
   },
   {
+    "name": "GM-PL-forecast-evaluation",
+    "organization": "epiforecasts",
+    "category": "unknown",
+    "summary": "(Unofficial) evaluation of the forecasts submitted to the German Forecast Hub",
+    "homepage": "https://github.com/epiforecasts/GM-PL-forecast-evaluation"
+  },
+  {
+    "name": "RtD3",
+    "organization": "epiforecasts",
+    "category": "unknown",
+    "summary": "Rt visualisation in D3",
+    "homepage": "https://github.com/epiforecasts/RtD3"
+  },
+  {
+    "name": "SARS-CoV-2-VL-paper",
+    "organization": "epiforecasts",
+    "category": "unknown",
+    "summary": "Data and files from the May 25, 2021 SARS-CoV-2 viral load and infectiousness paper",
+    "homepage": "https://github.com/epiforecasts/SARS-CoV-2-VL-paper"
+  },
+  {
     "name": "Severity_methods_assessment",
+    "organization": "epiverse-trace",
     "category": "r_package",
     "summary": "Assessment of severity estimation methods during an infectious disease outbreak",
     "homepage": "https://github.com/epiverse-trace/Severity_methods_assessment"
   },
   {
+    "name": "WuhanSeedingVsTransmission",
+    "organization": "epiforecasts",
+    "category": "unknown",
+    "summary": "The transmissibility of novel Coronavirus in the early stages of the 2019-20 outbreak in Wuhan: Exploring initial point-source exposure sizes and durations using scenario analysis",
+    "homepage": "https://github.com/epiforecasts/WuhanSeedingVsTransmission",
+    "topics": [
+      "ncov",
+      "ncov-data-visual",
+      "rstats",
+      "rstats-package"
+    ]
+  },
+  {
+    "name": "actions",
+    "organization": "epiforecasts",
+    "category": "unknown",
+    "summary": "Reusable GitHub Actions for epiforecasts projects",
+    "homepage": "https://github.com/epiforecasts/actions"
+  },
+  {
+    "name": "actions-dashboard",
+    "organization": "epiforecasts",
+    "category": "unknown",
+    "summary": "A simple dashboard to visualise the status for all workflows used in this GitHub organisation",
+    "homepage": "https://github.com/epiforecasts/actions-dashboard"
+  },
+  {
+    "name": "argus",
+    "organization": "reconhub",
+    "category": "unknown",
+    "summary": "Helpers for WHO's Argus",
+    "homepage": "https://github.com/reconhub/argus"
+  },
+  {
+    "name": "aweek",
+    "organization": "reconhub",
+    "category": "unknown",
+    "summary": "Convert dates to arbitrary week definitions :calendar:",
+    "homepage": "https://github.com/reconhub/aweek",
+    "topics": [
+      "date-formatting",
+      "dates",
+      "epidemiology",
+      "r",
+      "r-package",
+      "timeseries",
+      "week"
+    ]
+  },
+  {
+    "name": "backcalc",
+    "organization": "epiforecasts",
+    "category": "unknown",
+    "summary": "Evaluating approaches to backcalculating cases counts by date of infection from cases counts by date of report",
+    "homepage": "https://github.com/epiforecasts/backcalc"
+  },
+  {
+    "name": "baseline.models",
+    "organization": "epiforecasts",
+    "category": "unknown",
+    "homepage": "https://github.com/epiforecasts/baseline.models"
+  },
+  {
     "name": "blueprints",
+    "organization": "epiverse-trace",
     "category": "repository",
     "summary": "Software development blueprints for epiverse-trace",
     "homepage": "https://github.com/epiverse-trace/blueprints",
@@ -60,7 +246,35 @@
     ]
   },
   {
+    "name": "bpmodels",
+    "organization": "epiforecasts",
+    "category": "unknown",
+    "summary": "[RETIRED. Use the epichains package instead]. Methods for simulating and analysing the sizes and lengths of chains from branching process models",
+    "homepage": "https://github.com/epiforecasts/bpmodels",
+    "topics": [
+      "branching-process",
+      "epidemic-dynamics",
+      "epidemic-modelling",
+      "epidemic-simulations",
+      "epidemiology",
+      "epiverse",
+      "outbreak-simulator",
+      "r",
+      "r-package",
+      "transmission-chain",
+      "transmission-chain-reconstruction"
+    ]
+  },
+  {
+    "name": "branchr",
+    "organization": "reconhub",
+    "category": "unknown",
+    "summary": "R Estimation from Cluster Sizes",
+    "homepage": "https://github.com/reconhub/branchr"
+  },
+  {
     "name": "cfr",
+    "organization": "epiverse-trace",
     "category": "r_package",
     "summary": "R package to estimate disease severity and under-reporting in real-time, accounting for reporting delays in epidemic time-series",
     "homepage": "https://github.com/epiverse-trace/cfr",
@@ -77,7 +291,15 @@
     ]
   },
   {
+    "name": "cityforecasts",
+    "organization": "epiforecasts",
+    "category": "unknown",
+    "summary": "R scripts to generate city-level forecasts",
+    "homepage": "https://github.com/epiforecasts/cityforecasts"
+  },
+  {
     "name": "cleanepi",
+    "organization": "epiverse-trace",
     "category": "r_package",
     "summary": "R package to clean and standardize epidemiological data",
     "homepage": "https://github.com/epiverse-trace/cleanepi",
@@ -91,11 +313,401 @@
   },
   {
     "name": "climateR0",
+    "organization": "epiverse-trace",
     "category": "r_package",
     "homepage": "https://github.com/epiverse-trace/climateR0"
   },
   {
+    "name": "contactsim",
+    "organization": "reconhub",
+    "category": "unknown",
+    "summary": "Simulate Disease Outbreaks with Contacts",
+    "homepage": "https://github.com/reconhub/contactsim"
+  },
+  {
+    "name": "contactsurveys",
+    "organization": "epiforecasts",
+    "category": "unknown",
+    "summary": "Download and access social contact data",
+    "homepage": "https://github.com/epiforecasts/contactsurveys"
+  },
+  {
+    "name": "course-malta-2018",
+    "organization": "reconhub",
+    "category": "unknown",
+    "summary": "website for RECON short course in Malta 2018",
+    "homepage": "https://github.com/reconhub/course-malta-2018"
+  },
+  {
+    "name": "course-sofia-2018",
+    "organization": "reconhub",
+    "category": "unknown",
+    "summary": "website for RECON short course in Sofia 2018",
+    "homepage": "https://github.com/reconhub/course-sofia-2018"
+  },
+  {
+    "name": "covid",
+    "organization": "epiforecasts",
+    "category": "unknown",
+    "summary": "Temporal variation in transmission during the COVID-19 outbreak",
+    "homepage": "https://github.com/epiforecasts/covid",
+    "topics": [
+      "covid"
+    ]
+  },
+  {
+    "name": "covid-global",
+    "organization": "epiforecasts",
+    "category": "unknown",
+    "summary": "This is a submodule of epiforecasts/covid - see that repo for information. See https://github.com/epiforecasts/covid-global-archive for an archive",
+    "homepage": "https://github.com/epiforecasts/covid-global"
+  },
+  {
+    "name": "covid-global-archive",
+    "organization": "epiforecasts",
+    "category": "unknown",
+    "summary": "This is a submodule of epiforecasts/covid - see that repo for information",
+    "homepage": "https://github.com/epiforecasts/covid-global-archive"
+  },
+  {
+    "name": "covid-regional",
+    "organization": "epiforecasts",
+    "category": "unknown",
+    "summary": "This a submodule of epiforecasts/covid - see that repo for further information.  See here for an archive: https://github.com/epiforecasts/covid-regional-archive",
+    "homepage": "https://github.com/epiforecasts/covid-regional"
+  },
+  {
+    "name": "covid-regional-2",
+    "organization": "epiforecasts",
+    "category": "unknown",
+    "summary": "This a submodule of epiforecasts/covid - see that repo for further information.",
+    "homepage": "https://github.com/epiforecasts/covid-regional-2"
+  },
+  {
+    "name": "covid-regional-2-archive",
+    "organization": "epiforecasts",
+    "category": "unknown",
+    "summary": "as covid-regional, different countries",
+    "homepage": "https://github.com/epiforecasts/covid-regional-2-archive"
+  },
+  {
+    "name": "covid-regional-archive",
+    "organization": "epiforecasts",
+    "category": "unknown",
+    "summary": "This a submodule of epiforecasts/covid - see that repo for further information.",
+    "homepage": "https://github.com/epiforecasts/covid-regional-archive"
+  },
+  {
+    "name": "covid-rt-brazil-subregional",
+    "organization": "epiforecasts",
+    "category": "unknown",
+    "summary": "Subregional estimates of Rt for Covid-19 in Brazil",
+    "homepage": "https://github.com/epiforecasts/covid-rt-brazil-subregional",
+    "topics": [
+      "brazil",
+      "covid-19",
+      "epinow2",
+      "reproduction-number",
+      "rstats"
+    ]
+  },
+  {
+    "name": "covid-rt-estimates",
+    "organization": "epiforecasts",
+    "category": "unknown",
+    "summary": "National and subnational estimates of the time-varying reproduction number for Covid-19",
+    "homepage": "https://github.com/epiforecasts/covid-rt-estimates",
+    "topics": [
+      "country",
+      "covid-19",
+      "epinow2",
+      "open-source",
+      "reproduction-number",
+      "subnational-estimates"
+    ]
+  },
+  {
+    "name": "covid-rt-estimates-batch",
+    "organization": "epiforecasts",
+    "category": "unknown",
+    "homepage": "https://github.com/epiforecasts/covid-rt-estimates-batch"
+  },
+  {
+    "name": "covid-uk-upload",
+    "organization": "epiforecasts",
+    "category": "unknown",
+    "summary": "Collation and upload of epidemiological estimates of COVID-19 in the UK",
+    "homepage": "https://github.com/epiforecasts/covid-uk-upload"
+  },
+  {
+    "name": "covid-us-forecasts",
+    "organization": "epiforecasts",
+    "category": "unknown",
+    "summary": "Forecasting Covid-19 in the US",
+    "homepage": "https://github.com/epiforecasts/covid-us-forecasts",
+    "topics": [
+      "coronavirus",
+      "covid-19",
+      "forecasting",
+      "united-states"
+    ]
+  },
+  {
+    "name": "covid.german.forecasts",
+    "organization": "epiforecasts",
+    "category": "unknown",
+    "summary": "Comparing crowd sourced and model derived forecasts of Covid-19 for Germany and Poland",
+    "homepage": "https://github.com/epiforecasts/covid.german.forecasts",
+    "topics": [
+      "covid-19",
+      "epiexpert",
+      "epinow2",
+      "forecast",
+      "germany",
+      "poland",
+      "reproduction-number"
+    ]
+  },
+  {
+    "name": "covid19-forecast-hub",
+    "organization": "epiforecasts",
+    "category": "unknown",
+    "summary": "Projections of COVID-19, in standardized format",
+    "homepage": "https://github.com/epiforecasts/covid19-forecast-hub"
+  },
+  {
+    "name": "covid19-forecast-hub-europe-research",
+    "organization": "epiforecasts",
+    "category": "unknown",
+    "homepage": "https://github.com/epiforecasts/covid19-forecast-hub-europe-research"
+  },
+  {
+    "name": "covid19-hospital-activity",
+    "organization": "epiforecasts",
+    "category": "unknown",
+    "summary": "Short-term forecasts of Trust-level COVID-19 hospital admissions in England.",
+    "homepage": "https://github.com/epiforecasts/covid19-hospital-activity"
+  },
+  {
+    "name": "covid19-uk-nowcasts-projections",
+    "organization": "epiforecasts",
+    "category": "unknown",
+    "summary": "Nowcasts and projections of Covid-19 in the UK",
+    "homepage": "https://github.com/epiforecasts/covid19-uk-nowcasts-projections"
+  },
+  {
+    "name": "covid19.forecasts.uk",
+    "organization": "epiforecasts",
+    "category": "unknown",
+    "summary": "Data and code accompanying the preprint \"Short-term forecasts to inform the response to the Covid-19 epidemic in the UK\"",
+    "homepage": "https://github.com/epiforecasts/covid19.forecasts.uk"
+  },
+  {
+    "name": "covid19.lfd.england",
+    "organization": "epiforecasts",
+    "category": "unknown",
+    "summary": "SARS-CoV-2 prevalence in at LTLA level and in educational institutions in England according to LFD testing.",
+    "homepage": "https://github.com/epiforecasts/covid19.lfd.england"
+  },
+  {
+    "name": "covid19.nhs.data",
+    "organization": "epiforecasts",
+    "category": "unknown",
+    "summary": "Trust-level COVID-19 hospitalisations in England",
+    "homepage": "https://github.com/epiforecasts/covid19.nhs.data",
+    "topics": [
+      "covid19",
+      "hospitalisations",
+      "local-authority",
+      "nhs",
+      "openscience",
+      "r-package",
+      "uk"
+    ]
+  },
+  {
+    "name": "covid19.sgene.utla.rt",
+    "organization": "epiforecasts",
+    "category": "unknown",
+    "summary": "Local area reproduction numbers and S-gene target failure.",
+    "homepage": "https://github.com/epiforecasts/covid19.sgene.utla.rt",
+    "topics": [
+      "covid-19",
+      "open-science",
+      "reproduction-number"
+    ]
+  },
+  {
+    "name": "covid19.slovakia.mass.testing",
+    "organization": "epiforecasts",
+    "category": "unknown",
+    "summary": "Data and code accompanying the preprint \"The effectiveness of population-wide screening in reducing SARS-CoV-2 infection prevalence in Slovakia\"",
+    "homepage": "https://github.com/epiforecasts/covid19.slovakia.mass.testing"
+  },
+  {
+    "name": "covid19.track.severity",
+    "organization": "epiforecasts",
+    "category": "unknown",
+    "homepage": "https://github.com/epiforecasts/covid19.track.severity"
+  },
+  {
+    "name": "covid19_ct_pillar2",
+    "organization": "epiforecasts",
+    "category": "unknown",
+    "homepage": "https://github.com/epiforecasts/covid19_ct_pillar2"
+  },
+  {
+    "name": "covid19_immunity",
+    "organization": "epiforecasts",
+    "category": "unknown",
+    "summary": "Covid-19 immunity estimates",
+    "homepage": "https://github.com/epiforecasts/covid19_immunity"
+  },
+  {
+    "name": "covid19_uk_local",
+    "organization": "epiforecasts",
+    "category": "unknown",
+    "summary": "UK local Covid-19 analysis",
+    "homepage": "https://github.com/epiforecasts/covid19_uk_local"
+  },
+  {
+    "name": "covid19hub",
+    "organization": "reconhub",
+    "category": "unknown",
+    "summary": "Community-driven COVID-19 analytics in R",
+    "homepage": "https://github.com/reconhub/covid19hub"
+  },
+  {
+    "name": "covid_schools",
+    "organization": "epiforecasts",
+    "category": "unknown",
+    "homepage": "https://github.com/epiforecasts/covid_schools"
+  },
+  {
+    "name": "covidforecastanalysis",
+    "organization": "epiforecasts",
+    "category": "unknown",
+    "summary": "Code for evaluating COVID-19 forecasts",
+    "homepage": "https://github.com/epiforecasts/covidforecastanalysis"
+  },
+  {
+    "name": "covidregionaldata",
+    "organization": "epiforecasts",
+    "category": "unknown",
+    "summary": "An interface to subnational and national level COVID-19 data. For all countries supported, this includes a daily time-series of cases. Wherever available we also provide data on deaths, hospitalisations, and tests. National level data is also supported using a range of data sources as well as linelist data and links to intervention data sets.",
+    "homepage": "https://github.com/epiforecasts/covidregionaldata",
+    "topics": [
+      "covid-19",
+      "data",
+      "open-science",
+      "r6",
+      "regional-data",
+      "rstats"
+    ]
+  },
+  {
+    "name": "crowd-evaluation",
+    "organization": "epiforecasts",
+    "category": "unknown",
+    "summary": "Evaluation for our crowd forecasts",
+    "homepage": "https://github.com/epiforecasts/crowd-evaluation"
+  },
+  {
+    "name": "crowdforecastr",
+    "organization": "epiforecasts",
+    "category": "unknown",
+    "homepage": "https://github.com/epiforecasts/crowdforecastr",
+    "topics": [
+      "r-package"
+    ]
+  },
+  {
+    "name": "ctdist",
+    "organization": "epiforecasts",
+    "category": "unknown",
+    "summary": "Inferring changes in the distribution of Ct values over time",
+    "homepage": "https://github.com/epiforecasts/ctdist"
+  },
+  {
+    "name": "daily-vs-weekly-forecast-eval",
+    "organization": "epiforecasts",
+    "category": "unknown",
+    "summary": "Evaluation of forecasts generated with daily and weekly inputs",
+    "homepage": "https://github.com/epiforecasts/daily-vs-weekly-forecast-eval"
+  },
+  {
+    "name": "datacomparator",
+    "organization": "reconhub",
+    "category": "unknown",
+    "summary": "Shiny app for comparing 2 versions of a dataset",
+    "homepage": "https://github.com/reconhub/datacomparator"
+  },
+  {
+    "name": "delayscompare",
+    "organization": "epiforecasts",
+    "category": "unknown",
+    "summary": "Assessing the impact of misspecifying epidemiological distributions on predictive performance.",
+    "homepage": "https://github.com/epiforecasts/delayscompare"
+  },
+  {
+    "name": "deployer",
+    "organization": "reconhub",
+    "category": "unknown",
+    "summary": "Self-contained R environment on a thumb drive",
+    "homepage": "https://github.com/reconhub/deployer"
+  },
+  {
+    "name": "dibbler",
+    "organization": "reconhub",
+    "category": "unknown",
+    "summary": "Investigation of food-borne disease outbreaks",
+    "homepage": "https://github.com/reconhub/dibbler"
+  },
+  {
+    "name": "dist.spec",
+    "organization": "epiforecasts",
+    "category": "unknown",
+    "summary": "Define probability distributions with certain or uncertain parameters",
+    "homepage": "https://github.com/epiforecasts/dist.spec"
+  },
+  {
+    "name": "distcrete",
+    "organization": "reconhub",
+    "category": "unknown",
+    "summary": ":chart_with_upwards_trend::point_right::bar_chart: Discretise distributions",
+    "homepage": "https://github.com/reconhub/distcrete"
+  },
+  {
+    "name": "docker",
+    "organization": "reconhub",
+    "category": "unknown",
+    "summary": "Various docker images for RECON",
+    "homepage": "https://github.com/reconhub/docker"
+  },
+  {
+    "name": "drat",
+    "organization": "reconhub",
+    "category": "unknown",
+    "summary": ":package::package::package: drat repository",
+    "homepage": "https://github.com/reconhub/drat"
+  },
+  {
+    "name": "earlyR",
+    "organization": "reconhub",
+    "category": "unknown",
+    "summary": "Estimation of infectiousness in the early stage of an outbreak, with short-term predictions.",
+    "homepage": "https://github.com/reconhub/earlyR"
+  },
+  {
+    "name": "ecdc-covid19-admissions",
+    "organization": "epiforecasts",
+    "category": "unknown",
+    "summary": "Admissions forecasts for the European Forecast Hub",
+    "homepage": "https://github.com/epiforecasts/ecdc-covid19-admissions"
+  },
+  {
     "name": "epi-training-kit",
+    "organization": "epiverse-trace",
     "category": "r_package",
     "summary": "An e-learning strategy for training on analysis, modelling and response to outbreaks and epidemics in Latin-America and the Caribbean",
     "homepage": "https://github.com/epiverse-trace/epi-training-kit",
@@ -108,6 +720,7 @@
   },
   {
     "name": "epiCo",
+    "organization": "epiverse-trace",
     "category": "r_package",
     "summary": "R package for statistical and spatiotemporal modeling of epidemiological data for vector-borne diseases in Colombia",
     "homepage": "https://github.com/epiverse-trace/epiCo",
@@ -126,6 +739,7 @@
   },
   {
     "name": "epichains",
+    "organization": "epiverse-trace",
     "category": "r_package",
     "summary": "Methods for simulating and analysing the sizes and lengths of infectious disease transmission chains from branching process models",
     "homepage": "https://github.com/epiverse-trace/epichains",
@@ -144,7 +758,41 @@
     ]
   },
   {
+    "name": "epicontacts",
+    "organization": "reconhub",
+    "category": "unknown",
+    "summary": "Handling, Visualisation and Analysis of Epidemiological Contacts",
+    "homepage": "https://github.com/reconhub/epicontacts",
+    "topics": [
+      "outbreak",
+      "r",
+      "r-package"
+    ]
+  },
+  {
+    "name": "epicontacts.ui",
+    "organization": "reconhub",
+    "category": "unknown",
+    "summary": "Shiny UI components for epicontacts",
+    "homepage": "https://github.com/reconhub/epicontacts.ui"
+  },
+  {
+    "name": "epicookbook",
+    "organization": "reconhub",
+    "category": "unknown",
+    "summary": "A cookbook of epidemiological models in R",
+    "homepage": "https://github.com/reconhub/epicookbook"
+  },
+  {
+    "name": "epidemia",
+    "organization": "epiforecasts",
+    "category": "unknown",
+    "summary": "epidemia package",
+    "homepage": "https://github.com/epiforecasts/epidemia"
+  },
+  {
     "name": "epidemics",
+    "organization": "epiverse-trace",
     "category": "r_package",
     "summary": "A library of published compartmental epidemic models, and classes to represent demographic structure, non-pharmaceutical interventions, and vaccination regimes, to compose epidemic scenarios.",
     "homepage": "https://github.com/epiverse-trace/epidemics",
@@ -166,7 +814,57 @@
     ]
   },
   {
+    "name": "epiflows",
+    "organization": "reconhub",
+    "category": "unknown",
+    "summary": "\u2623:airplane: Risk assessment of travel-related disease spread",
+    "homepage": "https://github.com/reconhub/epiflows",
+    "topics": [
+      "outbreak",
+      "r",
+      "r-package"
+    ]
+  },
+  {
+    "name": "epiforecasts.github.io",
+    "organization": "epiforecasts",
+    "category": "unknown",
+    "summary": "Quarto website for EpiForecasts",
+    "homepage": "https://github.com/epiforecasts/epiforecasts.github.io"
+  },
+  {
+    "name": "epiforecasts.r-universe.dev",
+    "organization": "epiforecasts",
+    "category": "unknown",
+    "summary": "epiforecasts R universe",
+    "homepage": "https://github.com/epiforecasts/epiforecasts.r-universe.dev",
+    "topics": [
+      "infrastructure"
+    ]
+  },
+  {
+    "name": "epiforecasts_gantt_chart",
+    "organization": "epiforecasts",
+    "category": "unknown",
+    "summary": "Some basic R code for making the lab personnel gantt chart",
+    "homepage": "https://github.com/epiforecasts/epiforecasts_gantt_chart"
+  },
+  {
+    "name": "epimap_doc",
+    "organization": "reconhub",
+    "category": "unknown",
+    "summary": "Resources for mapping infectious diseases",
+    "homepage": "https://github.com/reconhub/epimap_doc"
+  },
+  {
+    "name": "epimaps",
+    "organization": "reconhub",
+    "category": "unknown",
+    "homepage": "https://github.com/reconhub/epimaps"
+  },
+  {
     "name": "epimodelac",
+    "organization": "epiverse-trace",
     "category": "r_package",
     "summary": "Training materials for the epimodelac workshop",
     "homepage": "https://github.com/epiverse-trace/epimodelac",
@@ -178,18 +876,21 @@
   },
   {
     "name": "epimodelac-en",
+    "organization": "epiverse-trace",
     "category": "r_package",
     "summary": "Training materials for the epimodelac workshop",
     "homepage": "https://github.com/epiverse-trace/epimodelac-en"
   },
   {
     "name": "epinetwork",
+    "organization": "epiverse-trace",
     "category": "r_package",
     "summary": "Modelling transmission on real-world social networks",
     "homepage": "https://github.com/epiverse-trace/epinetwork"
   },
   {
     "name": "epiparameter",
+    "organization": "epiverse-trace",
     "category": "r_package",
     "summary": "R package with classes and helper functions for working with epidemiological parameters and access to a library of epidemiological parameters for infectious diseases",
     "homepage": "https://github.com/epiverse-trace/epiparameter",
@@ -205,6 +906,7 @@
   },
   {
     "name": "epiparameterDB",
+    "organization": "epiverse-trace",
     "category": "r_package",
     "summary": "Database of epidemiological parameters",
     "homepage": "https://github.com/epiverse-trace/epiparameterDB",
@@ -218,23 +920,34 @@
   },
   {
     "name": "epiparameterDashboard",
+    "organization": "epiverse-trace",
     "category": "application",
     "summary": "Explore the database of epidemiological parameters provided by the {epiparameterDB} package",
     "homepage": "https://github.com/epiverse-trace/epiparameterDashboard"
   },
   {
+    "name": "epirisk",
+    "organization": "reconhub",
+    "category": "unknown",
+    "summary": "Epidemiological risk calculator for outbreak response",
+    "homepage": "https://github.com/reconhub/epirisk"
+  },
+  {
     "name": "epishiny",
+    "organization": "epiverse-trace",
     "category": "application",
     "summary": "[FORK] Tools for interactive visualisation of epidemiological linelist data",
     "homepage": "https://github.com/epiverse-trace/epishiny"
   },
   {
     "name": "epishowcase",
+    "organization": "epiverse-trace",
     "category": "r_package",
     "homepage": "https://github.com/epiverse-trace/epishowcase"
   },
   {
     "name": "episoap",
+    "organization": "epiverse-trace",
     "category": "r_package",
     "summary": "[Not published - under active development] A Store of Outbreak Analytics Pipelines Provided as Rmarkdown Report Templates",
     "homepage": "https://github.com/epiverse-trace/episoap",
@@ -253,11 +966,25 @@
   },
   {
     "name": "epitkit",
+    "organization": "epiverse-trace",
     "category": "r_package",
     "homepage": "https://github.com/epiverse-trace/epitkit"
   },
   {
+    "name": "epitrix",
+    "organization": "reconhub",
+    "category": "unknown",
+    "summary": "Small Helpers and Tricks for Epidemics Analysis",
+    "homepage": "https://github.com/reconhub/epitrix",
+    "topics": [
+      "epidemiology",
+      "r",
+      "r-package"
+    ]
+  },
+  {
     "name": "epiverse",
+    "organization": "epiverse-trace",
     "category": "r_package",
     "summary": "Meta-package for the Epiverse-TRACE R packages",
     "homepage": "https://github.com/epiverse-trace/epiverse",
@@ -269,6 +996,7 @@
   },
   {
     "name": "epiverse-trace.github.io",
+    "organization": "epiverse-trace",
     "category": "r_package",
     "summary": "Technical blog of the Epiverse-TRACE project, where we share opinions and investigations in R package development, or scientific software development more generally",
     "homepage": "https://github.com/epiverse-trace/epiverse-trace.github.io",
@@ -280,6 +1008,7 @@
   },
   {
     "name": "epiverse-trace.r-universe.dev",
+    "organization": "epiverse-trace",
     "category": "repository",
     "summary": "R-universe for the epiverse-trace GitHub organisation",
     "homepage": "https://github.com/epiverse-trace/epiverse-trace.r-universe.dev",
@@ -292,11 +1021,13 @@
   },
   {
     "name": "epiverse_demos",
+    "organization": "epiverse-trace",
     "category": "r_package",
     "homepage": "https://github.com/epiverse-trace/epiverse_demos"
   },
   {
     "name": "epiversedashboard",
+    "organization": "epiverse-trace",
     "category": "application",
     "summary": "Epiverse-TRACE activity dashboard",
     "homepage": "https://github.com/epiverse-trace/epiversedashboard",
@@ -306,11 +1037,13 @@
   },
   {
     "name": "epiverselearner",
+    "organization": "epiverse-trace",
     "category": "r_package",
     "homepage": "https://github.com/epiverse-trace/epiverselearner"
   },
   {
     "name": "epiversetheme",
+    "organization": "epiverse-trace",
     "category": "r_package",
     "homepage": "https://github.com/epiverse-trace/epiversetheme",
     "topics": [
@@ -325,12 +1058,14 @@
   },
   {
     "name": "etdashboard",
+    "organization": "epiverse-trace",
     "category": "application",
     "summary": "Developer dashboard for a universe overview of Epiverse-TRACE packages",
     "homepage": "https://github.com/epiverse-trace/etdashboard"
   },
   {
     "name": "etstats",
+    "organization": "epiverse-trace",
     "category": "r_package",
     "homepage": "https://github.com/epiverse-trace/etstats",
     "topics": [
@@ -340,7 +1075,92 @@
     ]
   },
   {
+    "name": "euro-hub-ensemble",
+    "organization": "epiforecasts",
+    "category": "unknown",
+    "summary": "Analysis of ensemble methods to aggregate Covid-19 forecasts across Europe.",
+    "homepage": "https://github.com/epiforecasts/euro-hub-ensemble",
+    "topics": [
+      "article",
+      "covid-19",
+      "covid19-forecast-hub-europe",
+      "forecast-hub"
+    ]
+  },
+  {
+    "name": "europe-covid-forecast",
+    "organization": "epiforecasts",
+    "category": "unknown",
+    "homepage": "https://github.com/epiforecasts/europe-covid-forecast"
+  },
+  {
+    "name": "eval-by-method",
+    "organization": "epiforecasts",
+    "category": "unknown",
+    "summary": "Thematic analysis of model performance in the European COVID-19 Forecast Hub",
+    "homepage": "https://github.com/epiforecasts/eval-by-method"
+  },
+  {
+    "name": "eval-germany-sp-nowcasting",
+    "organization": "epiforecasts",
+    "category": "unknown",
+    "summary": "Evaluating Semi-Parametric Nowcasts of COVID-19 Hospital Admissions in Germany",
+    "homepage": "https://github.com/epiforecasts/eval-germany-sp-nowcasting",
+    "topics": [
+      "cmdstanr",
+      "covid-19",
+      "epinowcast",
+      "germany",
+      "hospitalisations",
+      "nowcasting",
+      "targets"
+    ]
+  },
+  {
+    "name": "eval-omicron-for-case-forecasting",
+    "organization": "epiforecasts",
+    "category": "unknown",
+    "summary": "Joint forecasting of case counts and sequence (or SGTF) data across countries reporting data to GISAID",
+    "homepage": "https://github.com/epiforecasts/eval-omicron-for-case-forecasting"
+  },
+  {
+    "name": "evaluate-delta-for-forecasting",
+    "organization": "epiforecasts",
+    "category": "unknown",
+    "summary": "Evaluating the impact of modelling strain dynamics on short-term COVID-19 forecast performance",
+    "homepage": "https://github.com/epiforecasts/evaluate-delta-for-forecasting"
+  },
+  {
+    "name": "evalvariantnowcasthub",
+    "organization": "epiforecasts",
+    "category": "unknown",
+    "summary": "A code repository to characterise and evaluate data and nowcasts on SARS-CoV-2 variant dynamics in the U.S. from the U.S. variant nowcast hub",
+    "homepage": "https://github.com/epiforecasts/evalvariantnowcasthub"
+  },
+  {
+    "name": "evalwwforecasts",
+    "organization": "epiforecasts",
+    "category": "unknown",
+    "summary": "Evaluation of forecasts with and without incorporating wastewater",
+    "homepage": "https://github.com/epiforecasts/evalwwforecasts"
+  },
+  {
+    "name": "exploreringbp",
+    "organization": "epiforecasts",
+    "category": "unknown",
+    "summary": "Exploring the feasibility of controlling 2019-nCoV outbreaks by isolation of cases and contacts",
+    "homepage": "https://github.com/epiforecasts/exploreringbp",
+    "topics": [
+      "2019-ncov",
+      "interactive",
+      "open-research",
+      "rstats",
+      "shiny"
+    ]
+  },
+  {
     "name": "finalsize",
+    "organization": "epiverse-trace",
     "category": "r_package",
     "summary": "R package to calculate the final size of an SIR epidemic in populations with heterogeneity in social contacts and disease susceptibility",
     "homepage": "https://github.com/epiverse-trace/finalsize",
@@ -356,12 +1176,65 @@
     ]
   },
   {
+    "name": "forecast-europe",
+    "organization": "epiforecasts",
+    "category": "unknown",
+    "homepage": "https://github.com/epiforecasts/forecast-europe"
+  },
+  {
+    "name": "forecast-eval",
+    "organization": "epiforecasts",
+    "category": "unknown",
+    "summary": "delphi.cmu.edu/forecast-eval",
+    "homepage": "https://github.com/epiforecasts/forecast-eval"
+  },
+  {
+    "name": "forecast.vocs",
+    "organization": "epiforecasts",
+    "category": "unknown",
+    "summary": "Contains models and tools to produce short-term forecasts for both case and sequence notifications assuming circulation of either one or two variants. Tools are also provided to allow the evaluation of the use of sequence data for short-term forecasts in both real-world settings and in user generated scenarios.",
+    "homepage": "https://github.com/epiforecasts/forecast.vocs",
+    "topics": [
+      "r-package"
+    ]
+  },
+  {
+    "name": "forecastbaselines",
+    "organization": "epiforecasts",
+    "category": "unknown",
+    "summary": "forecastbaselines: R interface to ForecastBaselines.jl",
+    "homepage": "https://github.com/epiforecasts/forecastbaselines"
+  },
+  {
+    "name": "forecasthubutils",
+    "organization": "epiforecasts",
+    "category": "unknown",
+    "summary": "What the Package Does (Title Case)",
+    "homepage": "https://github.com/epiforecasts/forecasthubutils"
+  },
+  {
     "name": "gam-summit",
+    "organization": "epiverse-trace",
     "category": "documentation",
     "homepage": "https://github.com/epiverse-trace/gam-summit"
   },
   {
+    "name": "ggpyramid",
+    "organization": "reconhub",
+    "category": "unknown",
+    "summary": "Age pyramids",
+    "homepage": "https://github.com/reconhub/ggpyramid"
+  },
+  {
+    "name": "gisfirstaid",
+    "organization": "reconhub",
+    "category": "unknown",
+    "summary": "A collection of code gists for mapping infectious diseases",
+    "homepage": "https://github.com/reconhub/gisfirstaid"
+  },
+  {
     "name": "git-rstudio-basics",
+    "organization": "epiverse-trace",
     "category": "r_package",
     "summary": "Version Control with Git using Rstudio",
     "homepage": "https://github.com/epiverse-trace/git-rstudio-basics",
@@ -376,7 +1249,29 @@
     ]
   },
   {
+    "name": "guides",
+    "organization": "reconhub",
+    "category": "unknown",
+    "summary": "Recon's guidelines for writing statistical analyses reports",
+    "homepage": "https://github.com/reconhub/guides"
+  },
+  {
+    "name": "hackfest1",
+    "organization": "reconhub",
+    "category": "unknown",
+    "summary": "RECON hackfest 1",
+    "homepage": "https://github.com/reconhub/hackfest1"
+  },
+  {
+    "name": "hackfest2",
+    "organization": "reconhub",
+    "category": "unknown",
+    "summary": "Website for the RECON hackfest2",
+    "homepage": "https://github.com/reconhub/hackfest2"
+  },
+  {
     "name": "hex-stickers",
+    "organization": "epiverse-trace",
     "category": "infrastructure",
     "homepage": "https://github.com/epiverse-trace/hex-stickers",
     "topics": [
@@ -386,11 +1281,71 @@
   },
   {
     "name": "howto",
+    "organization": "epiverse-trace",
     "category": "r_package",
     "homepage": "https://github.com/epiverse-trace/howto"
   },
   {
+    "name": "hub_collaboration",
+    "organization": "epiforecasts",
+    "category": "unknown",
+    "summary": "Draft to define collaboration guidelines for hub infrastructure development",
+    "homepage": "https://github.com/epiforecasts/hub_collaboration"
+  },
+  {
+    "name": "idbrms",
+    "organization": "epiforecasts",
+    "category": "unknown",
+    "summary": "Population-level infectious disease modelling as an extension of brms.",
+    "homepage": "https://github.com/epiforecasts/idbrms",
+    "topics": [
+      "brms",
+      "infectious-disease-models",
+      "opensource",
+      "r-package"
+    ]
+  },
+  {
+    "name": "inc2prev",
+    "organization": "epiforecasts",
+    "category": "unknown",
+    "summary": "Estimate epidemiological quantities from repeated cross-sectional prevalence measurements",
+    "homepage": "https://github.com/epiforecasts/inc2prev",
+    "topics": [
+      "covid-19",
+      "open-science",
+      "rstats",
+      "stan"
+    ]
+  },
+  {
+    "name": "incidence",
+    "organization": "reconhub",
+    "category": "unknown",
+    "summary": "\u2623:chart_with_upwards_trend::chart_with_downwards_trend:\u2623 Compute and visualise incidence",
+    "homepage": "https://github.com/reconhub/incidence",
+    "topics": [
+      "outbreak",
+      "r",
+      "r-package"
+    ]
+  },
+  {
+    "name": "incidence.ui",
+    "organization": "reconhub",
+    "category": "unknown",
+    "summary": "Graphical User Interface for the incidence package",
+    "homepage": "https://github.com/reconhub/incidence.ui"
+  },
+  {
+    "name": "introduction-to-r-stegen",
+    "organization": "reconhub",
+    "category": "unknown",
+    "homepage": "https://github.com/reconhub/introduction-to-r-stegen"
+  },
+  {
     "name": "iraca",
+    "organization": "epiverse-trace",
     "category": "r_package",
     "summary": "Agent-Based model simulation of mosquito-human interaction in the Colombian and LAC setting",
     "homepage": "https://github.com/epiverse-trace/iraca",
@@ -403,7 +1358,33 @@
     ]
   },
   {
+    "name": "learn",
+    "organization": "reconhub",
+    "category": "unknown",
+    "summary": "RECON learn: a free, open platform for training material on epidemics analysis",
+    "homepage": "https://github.com/reconhub/learn",
+    "topics": [
+      "blogdown",
+      "htmlwidgets",
+      "lockedata",
+      "markdown",
+      "outbreaks",
+      "r",
+      "recon",
+      "website",
+      "websites"
+    ]
+  },
+  {
+    "name": "learn-public",
+    "organization": "reconhub",
+    "category": "unknown",
+    "summary": "Static content for the RECON learn website",
+    "homepage": "https://github.com/reconhub/learn-public"
+  },
+  {
     "name": "linelist",
+    "organization": "reconhub",
     "category": "r_package",
     "summary": "R package for handling linelist data",
     "homepage": "https://github.com/epiverse-trace/linelist",
@@ -420,13 +1401,117 @@
     ]
   },
   {
+    "name": "llm-epi-composition",
+    "organization": "epiforecasts",
+    "category": "unknown",
+    "summary": "Evaluating LLM ability to compose epidemic models with and without validated components",
+    "homepage": "https://github.com/epiforecasts/llm-epi-composition"
+  },
+  {
     "name": "llm-guidance",
+    "organization": "epiverse-trace",
     "category": "r_package",
     "summary": "Exploring use of LLMs to guide users to relevant packages/documentation",
     "homepage": "https://github.com/epiverse-trace/llm-guidance"
   },
   {
+    "name": "logo",
+    "organization": "reconhub",
+    "category": "unknown",
+    "summary": "Logo of the project",
+    "homepage": "https://github.com/reconhub/logo"
+  },
+  {
+    "name": "lopensemble",
+    "organization": "epiforecasts",
+    "category": "unknown",
+    "summary": "Model stacking for predictive ensembles",
+    "homepage": "https://github.com/epiforecasts/lopensemble",
+    "topics": [
+      "crps",
+      "ensembles",
+      "forecasting",
+      "stacking"
+    ]
+  },
+  {
+    "name": "marburg.parameters",
+    "organization": "epiforecasts",
+    "category": "unknown",
+    "summary": "Preliminary estimation of delays from data on Marburg in Equatorial Guinea",
+    "homepage": "https://github.com/epiforecasts/marburg.parameters"
+  },
+  {
+    "name": "matchmaker",
+    "organization": "reconhub",
+    "category": "unknown",
+    "summary": "Dictionary-based cleaning for categorical variables",
+    "homepage": "https://github.com/reconhub/matchmaker"
+  },
+  {
+    "name": "meeting-march-2018",
+    "organization": "reconhub",
+    "category": "unknown",
+    "summary": "Website for the RECON meeting in March 2018",
+    "homepage": "https://github.com/reconhub/meeting-march-2018"
+  },
+  {
+    "name": "meeting-march-2019",
+    "organization": "reconhub",
+    "category": "unknown",
+    "summary": "Website for the epi-roadmap meeting in March 2019",
+    "homepage": "https://github.com/reconhub/meeting-march-2019"
+  },
+  {
+    "name": "mme-review",
+    "organization": "epiforecasts",
+    "category": "unknown",
+    "summary": "Systematic review of multi-model ensemble evaluations in infectious disease",
+    "homepage": "https://github.com/epiforecasts/mme-review"
+  },
+  {
+    "name": "modelling-utility-review",
+    "organization": "epiforecasts",
+    "category": "unknown",
+    "homepage": "https://github.com/epiforecasts/modelling-utility-review"
+  },
+  {
+    "name": "monkeypox_heavytail",
+    "organization": "epiforecasts",
+    "category": "unknown",
+    "homepage": "https://github.com/epiforecasts/monkeypox_heavytail"
+  },
+  {
+    "name": "msf-sitrep",
+    "organization": "reconhub",
+    "category": "unknown",
+    "summary": "Sitrep template for MSF",
+    "homepage": "https://github.com/reconhub/msf-sitrep"
+  },
+  {
+    "name": "multi-model-information",
+    "organization": "epiforecasts",
+    "category": "unknown",
+    "summary": "Characterising information loss due to aggregating epidemic model outputs",
+    "homepage": "https://github.com/epiforecasts/multi-model-information"
+  },
+  {
+    "name": "nomad",
+    "organization": "reconhub",
+    "category": "unknown",
+    "summary": ":package::point_right::school_satchel: Pack up R to take away",
+    "homepage": "https://github.com/reconhub/nomad"
+  },
+  {
+    "name": "nowcasting.example",
+    "organization": "epiforecasts",
+    "category": "unknown",
+    "summary": "Estimate reporting delays and use them for nowcasting",
+    "homepage": "https://github.com/epiforecasts/nowcasting.example"
+  },
+  {
     "name": "numberize",
+    "organization": "epiverse-trace",
     "category": "r_package",
     "summary": "Convert words to numbers in English, French and Spanish",
     "homepage": "https://github.com/epiverse-trace/numberize",
@@ -436,7 +1521,40 @@
     ]
   },
   {
+    "name": "occupancy",
+    "organization": "reconhub",
+    "category": "unknown",
+    "summary": "WIP - Forecast hospital bed occupancy from data on admissions and length of stay",
+    "homepage": "https://github.com/reconhub/occupancy"
+  },
+  {
+    "name": "omicron-sgtf-forecast",
+    "organization": "epiforecasts",
+    "category": "unknown",
+    "summary": "In this work, we use S-gene target failure (SGTF) as a proxy of variant status combined with reported case counts to explore the evidence for changes in transmission advantage over time for the Omicron variant. If present this could indicate the impact of immune escape, bias in SGTF data or differences in the populations within which the variants are circulating. We also report estimates for growth rates by variant and overall, case counts overall and by variant for a 14 day forecast window assuming constant future growth, the date at which Omicron will become dominant in England and in each NHS region, and the estimated cumulative percentage of the population with a reported Omicron case.",
+    "homepage": "https://github.com/epiforecasts/omicron-sgtf-forecast",
+    "topics": [
+      "covid-19",
+      "forecast",
+      "omicron"
+    ]
+  },
+  {
+    "name": "ons_severity_estimates",
+    "organization": "epiforecasts",
+    "category": "unknown",
+    "homepage": "https://github.com/epiforecasts/ons_severity_estimates"
+  },
+  {
+    "name": "outbreaker2",
+    "organization": "reconhub",
+    "category": "unknown",
+    "summary": "Disease outbreak reconstruction from epidemiological and genetic data",
+    "homepage": "https://github.com/reconhub/outbreaker2"
+  },
+  {
     "name": "packagetemplate",
+    "organization": "epiverse-trace",
     "category": "r_package",
     "summary": "Template of an R package with standard Epiverse-TRACE automation",
     "homepage": "https://github.com/epiverse-trace/packagetemplate",
@@ -449,11 +1567,52 @@
   },
   {
     "name": "personas",
+    "organization": "epiverse-trace",
     "category": "r_package",
     "homepage": "https://github.com/epiverse-trace/personas"
   },
   {
+    "name": "phylo-practical",
+    "organization": "reconhub",
+    "category": "unknown",
+    "summary": "Introduction to phylogenetics using R, using influenza virus sequences",
+    "homepage": "https://github.com/reconhub/phylo-practical"
+  },
+  {
+    "name": "projections",
+    "organization": "reconhub",
+    "category": "unknown",
+    "summary": "Projections of future incidence",
+    "homepage": "https://github.com/reconhub/projections",
+    "topics": [
+      "r",
+      "r-package"
+    ]
+  },
+  {
+    "name": "qrensemble",
+    "organization": "epiforecasts",
+    "category": "unknown",
+    "summary": "Function and example for quantile regression average",
+    "homepage": "https://github.com/epiforecasts/qrensemble"
+  },
+  {
+    "name": "quantgen",
+    "organization": "epiforecasts",
+    "category": "unknown",
+    "summary": "Tools for generalized quantile modeling",
+    "homepage": "https://github.com/epiforecasts/quantgen"
+  },
+  {
+    "name": "quantmod",
+    "organization": "epiforecasts",
+    "category": "unknown",
+    "summary": "Tools for quantile modeling",
+    "homepage": "https://github.com/epiforecasts/quantmod"
+  },
+  {
     "name": "quickfit",
+    "organization": "epiverse-trace",
     "category": "r_package",
     "summary": "[SUSPENDED] Toolbox of model fitting helper functions",
     "homepage": "https://github.com/epiverse-trace/quickfit",
@@ -466,7 +1625,15 @@
     ]
   },
   {
+    "name": "rcomb",
+    "organization": "epiforecasts",
+    "category": "unknown",
+    "summary": "Exploring the sensitivity or R estimation",
+    "homepage": "https://github.com/epiforecasts/rcomb"
+  },
+  {
     "name": "readepi",
+    "organization": "epiverse-trace",
     "category": "r_package",
     "summary": "An R package for importing epi data into R.",
     "homepage": "https://github.com/epiverse-trace/readepi",
@@ -480,7 +1647,76 @@
     ]
   },
   {
+    "name": "recon-hackfest-3",
+    "organization": "reconhub",
+    "category": "unknown",
+    "homepage": "https://github.com/reconhub/recon-hackfest-3"
+  },
+  {
+    "name": "recon-helpdesk",
+    "organization": "reconhub",
+    "category": "unknown",
+    "summary": "Open an issue in this repository if you have general questions about RECON packages",
+    "homepage": "https://github.com/reconhub/recon-helpdesk",
+    "topics": [
+      "epidemiology",
+      "helpdesk",
+      "outbreaks",
+      "recon"
+    ]
+  },
+  {
+    "name": "recon.ui",
+    "organization": "reconhub",
+    "category": "unknown",
+    "summary": "Template shiny GUI for RECON packages",
+    "homepage": "https://github.com/reconhub/recon.ui"
+  },
+  {
+    "name": "recon_site_reboot",
+    "organization": "reconhub",
+    "category": "unknown",
+    "summary": "RECON Site consolidation",
+    "homepage": "https://github.com/reconhub/recon_site_reboot"
+  },
+  {
+    "name": "recondrat",
+    "organization": "reconhub",
+    "category": "unknown",
+    "summary": "RECON drat repo",
+    "homepage": "https://github.com/reconhub/recondrat"
+  },
+  {
+    "name": "reconhub",
+    "organization": "reconhub",
+    "category": "unknown",
+    "summary": "All stable packages from RECON",
+    "homepage": "https://github.com/reconhub/reconhub"
+  },
+  {
+    "name": "reconhub.github.io",
+    "organization": "reconhub",
+    "category": "unknown",
+    "summary": "Official website for RECON - The R Epidemics CONsortium",
+    "homepage": "https://github.com/reconhub/reconhub.github.io"
+  },
+  {
+    "name": "recontools",
+    "organization": "reconhub",
+    "category": "unknown",
+    "summary": "Tools to develop RECON packages",
+    "homepage": "https://github.com/reconhub/recontools"
+  },
+  {
+    "name": "report_factories_templates",
+    "organization": "reconhub",
+    "category": "unknown",
+    "summary": "Templates of report factories",
+    "homepage": "https://github.com/reconhub/report_factories_templates"
+  },
+  {
     "name": "research-compendium",
+    "organization": "epiverse-trace",
     "category": "r_package",
     "homepage": "https://github.com/epiverse-trace/research-compendium",
     "topics": [
@@ -493,7 +1729,38 @@
     ]
   },
   {
+    "name": "responsible-modelling",
+    "organization": "epiforecasts",
+    "category": "unknown",
+    "homepage": "https://github.com/epiforecasts/responsible-modelling"
+  },
+  {
+    "name": "rfextras",
+    "organization": "reconhub",
+    "category": "unknown",
+    "homepage": "https://github.com/reconhub/rfextras"
+  },
+  {
+    "name": "ringbp",
+    "organization": "epiforecasts",
+    "category": "unknown",
+    "summary": "Simulate infectious disease transmission with contact tracing",
+    "homepage": "https://github.com/epiforecasts/ringbp",
+    "topics": [
+      "controlling-outbreaks",
+      "transmission"
+    ]
+  },
+  {
+    "name": "rmd-example",
+    "organization": "reconhub",
+    "category": "unknown",
+    "summary": "Short Rmarkdown example, using a simple analysis of incubation period in simulated Ebola outbreak",
+    "homepage": "https://github.com/reconhub/rmd-example"
+  },
+  {
     "name": "rmdscaffold",
+    "organization": "epiverse-trace",
     "category": "r_package",
     "summary": "[Not published - under active development]",
     "homepage": "https://github.com/epiverse-trace/rmdscaffold",
@@ -503,7 +1770,55 @@
     ]
   },
   {
+    "name": "rt-breakpoints",
+    "organization": "epiforecasts",
+    "category": "unknown",
+    "summary": "Estimate Rt using breakpoints with EpiNow2",
+    "homepage": "https://github.com/epiforecasts/rt-breakpoints"
+  },
+  {
+    "name": "rt-comparison-uk-public",
+    "organization": "epiforecasts",
+    "category": "unknown",
+    "summary": "Evaluating the use of the reproduction number as an epidemiological tool, using spatio-temporal trends of the Covid-19 outbreak in England.",
+    "homepage": "https://github.com/epiforecasts/rt-comparison-uk-public",
+    "topics": [
+      "covid-19",
+      "epinow2",
+      "open-source",
+      "reproduction-number",
+      "rt-comparison-uk",
+      "united-kingdom"
+    ]
+  },
+  {
+    "name": "rt-comparison-us",
+    "organization": "epiforecasts",
+    "category": "unknown",
+    "homepage": "https://github.com/epiforecasts/rt-comparison-us"
+  },
+  {
+    "name": "rt-crowd-forecast",
+    "organization": "epiforecasts",
+    "category": "unknown",
+    "homepage": "https://github.com/epiforecasts/rt-crowd-forecast"
+  },
+  {
+    "name": "rt.validation",
+    "organization": "epiforecasts",
+    "category": "unknown",
+    "summary": "Validation of time-varying reproduction number estimates.",
+    "homepage": "https://github.com/epiforecasts/rt.validation"
+  },
+  {
+    "name": "rubus",
+    "organization": "reconhub",
+    "category": "unknown",
+    "homepage": "https://github.com/reconhub/rubus"
+  },
+  {
     "name": "safeframe",
+    "organization": "epiverse-trace",
     "category": "r_package",
     "summary": "Tagging, validating, and safeguarding data to help harden data pipelines.",
     "homepage": "https://github.com/epiverse-trace/safeframe",
@@ -513,12 +1828,14 @@
   },
   {
     "name": "sandpaper",
+    "organization": "epiverse-trace",
     "category": "r_package",
     "summary": "[FORK] User Interface for The Carpentries Workbench",
     "homepage": "https://github.com/epiverse-trace/sandpaper"
   },
   {
     "name": "scenarios",
+    "organization": "epiverse-trace",
     "category": "r_package",
     "summary": "[SUSPENDED]: R package to compare epidemic scenario model outcomes.",
     "homepage": "https://github.com/epiverse-trace/scenarios",
@@ -531,7 +1848,27 @@
     ]
   },
   {
+    "name": "schedule",
+    "organization": "epiforecasts",
+    "category": "unknown",
+    "summary": "EpiForecasts server job scheduling (CRON, docker, and bash)",
+    "homepage": "https://github.com/epiforecasts/schedule"
+  },
+  {
+    "name": "scoringutils",
+    "organization": "epiforecasts",
+    "category": "unknown",
+    "summary": "Utilities for Scoring and Assessing Predictions",
+    "homepage": "https://github.com/epiforecasts/scoringutils",
+    "topics": [
+      "forecast-evaluation",
+      "forecasting",
+      "r-package"
+    ]
+  },
+  {
     "name": "serofoi",
+    "organization": "epiverse-trace",
     "category": "r_package",
     "summary": "Estimates the Force-of-Infection of a given pathogen from population based sero-prevalence studies",
     "homepage": "https://github.com/epiverse-trace/serofoi",
@@ -547,17 +1884,48 @@
     ]
   },
   {
+    "name": "shinyHelpers",
+    "organization": "reconhub",
+    "category": "unknown",
+    "homepage": "https://github.com/reconhub/shinyHelpers"
+  },
+  {
     "name": "shinyapps-tracelac",
+    "organization": "epiverse-trace",
     "category": "application",
     "homepage": "https://github.com/epiverse-trace/shinyapps-tracelac"
   },
   {
     "name": "showcasedata",
+    "organization": "epiverse-trace",
     "category": "r_package",
     "homepage": "https://github.com/epiverse-trace/showcasedata"
   },
   {
+    "name": "simplified-forecaster-evaluation",
+    "organization": "epiforecasts",
+    "category": "unknown",
+    "summary": "Evaluation of a simplified forecasting model designed to emulate the performance of the ECDC forecasting hub.",
+    "homepage": "https://github.com/epiforecasts/simplified-forecaster-evaluation",
+    "topics": [
+      "covid-19",
+      "ensemble",
+      "evaluation",
+      "forecast-hub",
+      "forecasting",
+      "github-actions"
+    ]
+  },
+  {
+    "name": "simulacr",
+    "organization": "reconhub",
+    "category": "unknown",
+    "summary": "Helper functions for outbreak simulation",
+    "homepage": "https://github.com/reconhub/simulacr"
+  },
+  {
     "name": "simulist",
+    "organization": "epiverse-trace",
     "category": "r_package",
     "summary": "An R package for simulating line lists",
     "homepage": "https://github.com/epiverse-trace/simulist",
@@ -572,6 +1940,7 @@
   },
   {
     "name": "sivirep",
+    "organization": "epiverse-trace",
     "category": "r_package",
     "summary": "Data Wrangling and Automated Reports from 'SIVIGILA' source",
     "homepage": "https://github.com/epiverse-trace/sivirep",
@@ -585,7 +1954,44 @@
     ]
   },
   {
+    "name": "slack_bot",
+    "organization": "epiforecasts",
+    "category": "unknown",
+    "summary": "The source code for our friendly EpiForecasts bot",
+    "homepage": "https://github.com/epiforecasts/slack_bot"
+  },
+  {
+    "name": "socialmixr",
+    "organization": "epiforecasts",
+    "category": "unknown",
+    "summary": "Derive social mixing matrices from survey data.",
+    "homepage": "https://github.com/epiforecasts/socialmixr",
+    "topics": [
+      "r",
+      "r-package"
+    ]
+  },
+  {
+    "name": "ssi-2025-grant",
+    "organization": "epiforecasts",
+    "category": "unknown",
+    "summary": "SSI 2025 software maintenance grant application",
+    "homepage": "https://github.com/epiforecasts/ssi-2025-grant"
+  },
+  {
+    "name": "stanedit",
+    "organization": "epiforecasts",
+    "category": "unknown",
+    "summary": "Edit stan models from R",
+    "homepage": "https://github.com/epiforecasts/stanedit",
+    "topics": [
+      "probabilistic-programming",
+      "stan"
+    ]
+  },
+  {
     "name": "superspreading",
+    "organization": "epiverse-trace",
     "category": "r_package",
     "summary": "Estimation of individual-level variation in transmission",
     "homepage": "https://github.com/epiverse-trace/superspreading",
@@ -598,18 +2004,66 @@
     ]
   },
   {
+    "name": "talks",
+    "organization": "reconhub",
+    "category": "unknown",
+    "summary": "Material for RECON talks distributed under CC-BY",
+    "homepage": "https://github.com/reconhub/talks"
+  },
+  {
+    "name": "task-covid19-api",
+    "organization": "reconhub",
+    "category": "unknown",
+    "homepage": "https://github.com/reconhub/task-covid19-api"
+  },
+  {
+    "name": "task-covid19-webpage",
+    "organization": "reconhub",
+    "category": "unknown",
+    "homepage": "https://github.com/reconhub/task-covid19-webpage"
+  },
+  {
+    "name": "tasks",
+    "organization": "reconhub",
+    "category": "unknown",
+    "homepage": "https://github.com/reconhub/tasks"
+  },
+  {
+    "name": "tracer",
+    "organization": "reconhub",
+    "category": "unknown",
+    "summary": "Tools for informing contact tracing",
+    "homepage": "https://github.com/reconhub/tracer"
+  },
+  {
     "name": "tracetheme",
+    "organization": "epiverse-trace",
     "category": "r_package",
     "summary": "ggplot theme and scale for Epiverse-TRACE plots",
     "homepage": "https://github.com/epiverse-trace/tracetheme"
   },
   {
+    "name": "transformation-forecast-evaluation",
+    "organization": "epiforecasts",
+    "category": "unknown",
+    "homepage": "https://github.com/epiforecasts/transformation-forecast-evaluation"
+  },
+  {
     "name": "translation-epitkit",
+    "organization": "epiverse-trace",
     "category": "r_package",
     "homepage": "https://github.com/epiverse-trace/translation-epitkit"
   },
   {
+    "name": "trendbreaker",
+    "organization": "reconhub",
+    "category": "unknown",
+    "summary": "Analysing epidemic trends using AutoML approaches.",
+    "homepage": "https://github.com/reconhub/trendbreaker"
+  },
+  {
     "name": "tutorials",
+    "organization": "epiverse-trace",
     "category": "r_package",
     "homepage": "https://github.com/epiverse-trace/tutorials",
     "topics": [
@@ -623,6 +2077,7 @@
   },
   {
     "name": "tutorials-early",
+    "organization": "epiverse-trace",
     "category": "r_package",
     "summary": "Tutorials to learn reading, cleaning and validating case data, and converting line list data to incidence for visualizing epidemic curves.",
     "homepage": "https://github.com/epiverse-trace/tutorials-early",
@@ -640,12 +2095,14 @@
   },
   {
     "name": "tutorials-early-fr",
+    "organization": "epiverse-trace",
     "category": "r_package",
     "summary": "Tutorials to learn reading, cleaning and validating case data, and converting line list data to incidence for visualizing epidemic curves.",
     "homepage": "https://github.com/epiverse-trace/tutorials-early-fr"
   },
   {
     "name": "tutorials-late",
+    "organization": "epiverse-trace",
     "category": "r_package",
     "summary": "Tutorials to learn accessing and analyzing social contact matrices, scenario modelling to simulate disease spread and investigate interventions, and modelling disease burden.",
     "homepage": "https://github.com/epiverse-trace/tutorials-late",
@@ -664,7 +2121,15 @@
     ]
   },
   {
+    "name": "tutorials-late-fr",
+    "organization": "epiverse-trace",
+    "category": "unknown",
+    "summary": "Tutorials to learn accessing and analyzing social contact matrices, scenario modelling to simulate disease spread and investigate interventions, and modelling disease burden.",
+    "homepage": "https://github.com/epiverse-trace/tutorials-late-fr"
+  },
+  {
     "name": "tutorials-middle",
+    "organization": "epiverse-trace",
     "category": "r_package",
     "summary": "Tutorials to learn real-time analysis that includes accessing epidemiological delays, estimating transmission metrics, forecasting, and severity from aggregated incidence data, superspreading from line list and contact data, and simulating transmission chains.",
     "homepage": "https://github.com/epiverse-trace/tutorials-middle",
@@ -684,17 +2149,33 @@
   },
   {
     "name": "tutorials-middle-es",
+    "organization": "epiverse-trace",
     "category": "training",
     "homepage": "https://github.com/epiverse-trace/tutorials-middle-es"
   },
   {
     "name": "tutorials-middle-fr",
+    "organization": "epiverse-trace",
     "category": "r_package",
     "summary": "Tutorials to learn real-time analysis that includes accessing epidemiological delays, estimating transmission metrics, forecasting, and severity from aggregated incidence data, superspreading from line list and contact data, and simulating transmission chains.",
     "homepage": "https://github.com/epiverse-trace/tutorials-middle-fr"
   },
   {
+    "name": "uk-challenge",
+    "organization": "epiforecasts",
+    "category": "unknown",
+    "summary": "Evaluation reports for the UK Covid-19 Crowd Forecasting Challenge",
+    "homepage": "https://github.com/epiforecasts/uk-challenge"
+  },
+  {
+    "name": "uk-crowd-forecasting-challenge",
+    "organization": "epiforecasts",
+    "category": "unknown",
+    "homepage": "https://github.com/epiforecasts/uk-crowd-forecasting-challenge"
+  },
+  {
     "name": "vaccineff",
+    "organization": "epiverse-trace",
     "category": "r_package",
     "summary": "R package with tools for estimating vaccine effectiveness and vaccine related metrics",
     "homepage": "https://github.com/epiverse-trace/vaccineff",
@@ -708,8 +2189,30 @@
   },
   {
     "name": "varnish",
+    "organization": "epiverse-trace",
     "category": "repository",
     "summary": "Epiverse-TRACE fork of the Carpentries' workbench varnish package",
     "homepage": "https://github.com/epiverse-trace/varnish"
+  },
+  {
+    "name": "vimes",
+    "organization": "reconhub",
+    "category": "unknown",
+    "summary": "Visualisation and monitoring of epidemics",
+    "homepage": "https://github.com/reconhub/vimes"
+  },
+  {
+    "name": "workshop-sofia-2018",
+    "organization": "reconhub",
+    "category": "unknown",
+    "summary": "Materials for our workshop in Sofia, Bulgaria, October 2018",
+    "homepage": "https://github.com/reconhub/workshop-sofia-2018"
+  },
+  {
+    "name": "workshopbogota",
+    "organization": "reconhub",
+    "category": "unknown",
+    "summary": "Webiste for the workshop in Bogota",
+    "homepage": "https://github.com/reconhub/workshopbogota"
   }
 ]
