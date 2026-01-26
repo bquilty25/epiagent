@@ -3,7 +3,7 @@
 [![Lifecycle: Experimental](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://lifecycle.r-lib.org/articles/stages.html#experimental)
 
 
-**A Model Context Protocol (MCP) server that empowers AI agents to perform high-quality epidemiological analysis using the [Epiverse-TRACE](https://epiverse-trace.github.io/) ecosystem.**
+**A Model Context Protocol (MCP) server that empowers AI agents to perform high-quality epidemiological analysis using the [Epiverse-TRACE](https://epiverse-trace.github.io/), [Epiforecasts](https://epiforecasts.io/), and [RECON](https://www.repidemicsconsortium.org/) ecosystems.**
 
 `epiagent` bridges the gap between Large Language Models and rigorous epidemiological tools. It provides agents with semantic access to R packages (like `linelist` and `epiparameter`) and safeguards their workflow with professional Standard Operating Procedures (Agent Skills).
 
@@ -70,7 +70,8 @@ To use `epiagent` while working in *another* analysis repository, configure that
 | Function                              | Description                                                                       |
 | :------------------------------------ | :-------------------------------------------------------------------------------- |
 | **`find_relevant_packages(query)`**   | Semantically matches user questions to the most relevant Epiverse TRACE packages. |
-| **`list_epiverse_packages()`**        | Provides metadata on all available Epiverse tools.                                |
+| **`list_epiverse_packages()`**        | Provides metadata on all available Epiverse tools. (Alias: `get_packages`)        |
+| **`refresh_packages()`**              | Refreshes the package registry from GitHub.                                       |
 | **`call_epiverse_function(pkg, fn)`** | Safely executes R functions from Python via `rpy2`.                               |
 | **`ingest_repository(url)`**          | Creates AI-optimized digests of external codebases.                               |
 
