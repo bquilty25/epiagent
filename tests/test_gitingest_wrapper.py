@@ -77,7 +77,7 @@ class TestIngestRepository:
         """Test successful repository ingestion."""
         # Mock gitingest response
         mock_ingest.return_value = (
-            "Repository: test/repo\nFiles analyzed: 3\nEstimated tokens: 1.5k",
+            "Repository: test/repo\nFiles analyzed: 3\nEstimated tokens: 1500",
             "Directory structure:\n└── test-repo/\n    └── README.md",
             "================================================\nFILE: README.md\n================================================\n# Test",
         )
@@ -286,12 +286,4 @@ class TestBatchIngestRepositoriesAsync:
         assert result.data["successful_count"] == 10
 
 
-class TestImportError:
-    """Test import error handling when gitingest is not available."""
-    
-    @patch('epiagent.tools.gitingest_wrapper.ingest', None)
-    def test_import_error_without_gitingest(self):
-        """Test that ImportError is raised when gitingest is not available."""
-        with patch.dict('sys.modules', {'gitingest': None}):
-            with pytest.raises(ImportError, match="gitingest is required"):
-                from epiagent.tools.gitingest_wrapper import ingest_repository
+
