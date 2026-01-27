@@ -31,17 +31,64 @@ pip install -e ".[dev]"
 
 ## Usage
 
-### GitHub Copilot
+### GitHub Copilot (VS Code)
 1.  **Open Copilot Chat** in VS Code.
 2.  Enable the **epiagent** tool (via "Configure tools").
 3.  Ask: *"@workspace Which Epiverse package handles contact tracing data?"*
 
-### Claude Desktop / CLI
-Add to your Claude config (`~/Library/Application Support/Claude/claude_desktop_config.json` on macOS):
+### Remote / Cross-Repo Usage
 
+#### Method 1: Built-in Setup Command (Recommended) 🚀
+
+Use the built-in `setup` command from anywhere:
+
+```bash
+# From your epiagent directory:
+/path/to/epiagent/.venv/bin/python -m epiagent setup /path/to/your-workspace
+
+# Or setup the current directory:
+cd /path/to/your-workspace
+/path/to/epiagent/.venv/bin/python -m epiagent setup .
+```
+
+**Real example:**
+```bash
+/Users/yourname/epiagent/.venv/bin/python -m epiagent setup ~/my-analysis
+```
+
+The command will:
+- ✅ Auto-detect the epiagent installation path
+- ✅ Create both `.vscode/mcp.json` and `.vscode/settings.json`
+- ✅ Use correct absolute paths automatically
+- ✅ Preserve existing VS Code settings
+- ✅ Work from any directory
+
+**Then:** Reload VS Code (`Cmd+Shift+P` → "Developer: Reload Window") and you're done!
+
+---
+
+#### Method 2: Manual Setup
+To use `epiagent` while working in *another* analysis repository:
+
+#### 1. Find Your Epiagent Installation Path
+First, locate where epiagent is installed:
+```bash
+# Navigate to your epiagent directory
+cd /path/to/epiagent
+
+# Get the full path to the Python executable
+pwd  # This shows the epiagent directory
+# The Python path will be: <that-path>/.venv/bin/python
+```
+
+#### 2. Create Configuration Files
+In your **other workspace**, create or update these two files:
+
+**`.vscode/mcp.json`** (create this file):
 ```json
 {
-  "mcpServers": {
+  "inputs": [],
+  "servers": {
     "epiagent": {
       "command": "/ABSOLUTE/PATH/TO/epiagent/.venv/bin/python",
       "args": ["-m", "epiagent"]
@@ -50,20 +97,38 @@ Add to your Claude config (`~/Library/Application Support/Claude/claude_desktop_
 }
 ```
 
-### Remote / Cross-Repo Usage
-To use `epiagent` while working in *another* analysis repository, configure that repo's `.vscode/mcp.json` to point here:
-
+**`.vscode/settings.json`** (create or merge with existing):
 ```json
 {
-  "mcpServers": {
+  "github.copilot.chat.mcp.enabled": true,
+  "github.copilot.chat.mcp.servers": {
     "epiagent": {
       "command": "/ABSOLUTE/PATH/TO/epiagent/.venv/bin/python",
       "args": ["-m", "epiagent"],
-      "enabled": true
+      "cwd": "/ABSOLUTE/PATH/TO/epiagent"
     }
   }
 }
 ```
+
+> **🔧 Important**: Replace `/ABSOLUTE/PATH/TO/epiagent` with your actual path (e.g., `/Users/yourname/epiagent`)
+
+#### 3. Reload VS Code
+**Critical**: Press `Cmd+Shift+P` (or `Ctrl+Shift+P` on Windows/Linux), type "Developer: Reload Window", and press Enter.
+
+#### 4. Verify It Works
+Test the connection by running this command in your terminal:
+```bash
+/ABSOLUTE/PATH/TO/epiagent/.venv/bin/python -m epiagent --help
+```
+
+If you see the FastMCP banner, epiagent is working! Now try asking your AI assistant an epidemiology question.
+
+#### Troubleshooting
+- **"Command not found"**: Double-check the Python path exists: `ls -la /path/to/epiagent/.venv/bin/python`
+- **Still not working**: Check VS Code's Output panel (View → Output) and select "MCP" from the dropdown
+- **Wrong format error**: Ensure you're using `"servers"` (not `"mcpServers"`) in `mcp.json`
+
 
 ## Features
 

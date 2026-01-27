@@ -146,5 +146,26 @@ def ingest_git_repo(
 
 
 if __name__ == "__main__":
-    # Run the server (this will use stdout for JSON-RPC communication)
-    mcp.run()
+    # Check if this is a setup command
+    if len(sys.argv) > 1 and sys.argv[1] == "setup":
+        from .setup_utils import setup_workspace
+        
+        if len(sys.argv) < 3:
+            print("Usage: python -m epiagent setup <target-directory>")
+            print("\nExamples:")
+            print("  python -m epiagent setup ~/Documents/Work/my-analysis")
+            print("  python -m epiagent setup .  # Current directory")
+            sys.exit(1)
+        
+        target_dir = sys.argv[2]
+        setup_workspace(target_dir)
+    elif len(sys.argv) > 1 and sys.argv[1] in ["--help", "-h"]:
+        print("Epiagent MCP Server")
+        print("\nUsage:")
+        print("  python -m epiagent              # Start MCP server")
+        print("  python -m epiagent setup <dir>  # Configure workspace for MCP")
+        print("\nOptions:")
+        print("  -h, --help                      # Show this help message")
+    else:
+        # Run the MCP server (default behavior)
+        mcp.run()
