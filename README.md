@@ -4,7 +4,7 @@
 
 **A set of Claude Agent SDK skills for AI-powered epidemiological analysis using the Epiverse-TRACE R ecosystem.**
 
-Epiagent Skills gives Claude the ability to perform infectious disease epidemiology analyses — from outbreak simulation to publication-ready reports — by providing structured skill instructions grounded in the Epiverse-TRACE package ecosystem.
+Epiagent Skills gives Claude the ability to perform infectious disease epidemiology analyses — from outbreak simulation to writing a Quarto report — by providing structured skill instructions grounded in the Epiverse-TRACE package ecosystem.
 
 ## What's in this repo
 
