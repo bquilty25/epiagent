@@ -1,7 +1,6 @@
 # EpiAgent Skills
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![Epiverse-TRACE](https://img.shields.io/badge/Epiverse-TRACE-9b59b6.svg)](https://epiverse-trace.github.io/)
 
 **A set of Claude Agent SDK skills for AI-powered epidemiological analysis using the Epiverse-TRACE R ecosystem.**
 
@@ -85,4 +84,4 @@ This project builds upon the Epiverse-TRACE ecosystem, supported by data.org and
 
 ---
 
-**Skills for [Claude Agent SDK](https://github.com/anthropics/claude-agent-sdk)** | **Powered by [Epiverse-TRACE](https://epiverse-trace.github.io/)**
+**Skills for [Claude Agent SDK](https://github.com/anthropics/claude-agent-sdk)** 
