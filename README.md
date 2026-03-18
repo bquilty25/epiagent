@@ -8,11 +8,11 @@ Epiagent Skills gives Claude the ability to perform infectious disease epidemiol
 
 ## What's in this repo
 
-This repository contains only skills for the [Claude Agent SDK](https://github.com/anthropics/claude-agent-sdk). There is no standalone application code. The skills live in [`.agent/skills/`](.agent/skills/) and are loaded by Claude Code when working in this directory.
+This repository contains only skills for the [Claude Agent SDK](https://github.com/anthropics/claude-agent-sdk). There is no standalone application code. The skills live in [`.claude/skills/`](.claude/skills/) and are loaded by Claude Code when working in this directory.
 
 ```
 epiagent_skills/
-└── .agent/skills/
+└── .claude/skills/
     ├── epiverse_overview/   # Orchestrator for routing tasks
     ├── data_intake/         # Data cleaning and standardization
     ├── parameters/          # Epidemiological parameter management
