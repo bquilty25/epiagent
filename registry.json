@@ -1,0 +1,356 @@
+{
+  "epidemics": {
+    "title": "Composable Epidemic Scenario Modelling",
+    "description": "A library of compartmental epidemic models taken from the published literature, and classes to represent affected populations, public health response measures including non-pharmaceutical interventions on social contacts, non-pharmaceutical and pharmaceutical interventions that affect disease transmissibility, vaccination regimes, and disease seasonality, which can be combined to compose epidemic scenario models.",
+    "version": "0.4.0.9000",
+    "exports": [
+      "as.intervention",
+      "as.vaccination",
+      "combine_populations",
+      "epidemic_peak",
+      "epidemic_size",
+      "gravity_contact",
+      "intervention",
+      "is_contacts_intervention",
+      "is_intervention",
+      "is_population",
+      "is_rate_intervention",
+      "is_vaccination",
+      "model_default",
+      "model_diphtheria",
+      "model_ebola",
+      "model_vacamole",
+      "new_infections",
+      "outcomes_averted",
+      "population",
+      "vaccination"
+    ],
+    "vignettes": [
+      "Design principles for epidemics",
+      "Getting started with epidemic scenario modelling components",
+      "Getting started with modelling interventions targeting social contacts",
+      "Guide to developing epidemics features",
+      "Modelling a diphtheria outbreak in a humanitarian camp setting",
+      "Modelling in multiple populations",
+      "Modelling intervention scenarios",
+      "Modelling interventions that change infection parameters",
+      "Modelling leaky vaccination and hospitalisation outcomes with Vacamole",
+      "Modelling overlapping and sequential interventions targeting social contacts",
+      "Modelling parameter uncertainty",
+      "Modelling responses to a stochastic Ebola virus epidemic",
+      "Modelling the effect of a vaccination campaign",
+      "Modelling time-dependence and seasonality in transmission dynamics",
+      "Reducing parameters required for final size estimation"
+    ],
+    "pkgdown": "https://epiverse-trace.github.io/epidemics/"
+  },
+  "cfr": {
+    "title": "Estimate Disease Severity and Case Ascertainment",
+    "description": "Estimate the severity of a disease and ascertainment of cases, as discussed in Nishiura et al. (2009) <doi:10.1371/journal.pone.0006852>.",
+    "version": "0.2.0.9000",
+    "exports": [
+      "cfr_rolling",
+      "cfr_static",
+      "cfr_time_varying",
+      "estimate_ascertainment",
+      "estimate_outcomes",
+      "prepare_data"
+    ],
+    "vignettes": [
+      "A primer on working with delay distributions",
+      "Calculating a static, delay-adjusted estimate of disease severity",
+      "Estimating disease severity while correcting for reporting delays",
+      "Estimating fatality risk from individual level data",
+      "Estimating how disease severity varies over the course of an outbreak",
+      "Estimating the proportion of cases that are ascertained during an outbreak",
+      "Handling data from {incidence2}",
+      "Software permissions and regulations"
+    ],
+    "pkgdown": "https://epiverse-trace.github.io/cfr/"
+  },
+  "finalsize": {
+    "title": "Calculate the Final Size of an Epidemic",
+    "description": "Calculate the final size of a susceptible-infectious-recovered epidemic in a population with demographic variation in contact patterns and susceptibility to disease, as discussed in Miller (2012) <doi:10.1007/s11538-012-9749-6>.",
+    "version": "0.2.1.9000",
+    "exports": [
+      "final_size",
+      "lambda_to_r0",
+      "r_eff",
+      "r0_to_lambda"
+    ],
+    "vignettes": [
+      "Calculating the final size of an epidemic",
+      "Comparison with a compartmental model",
+      "Guide to constructing susceptibility matrices",
+      "Modelling heterogeneous social contacts",
+      "Modelling heterogeneous susceptibility",
+      "Modelling uncertainty in R\u2080",
+      "Projecting re-emergence risk after waning or new births",
+      "Ready reckoner for Reff",
+      "Theoretical background"
+    ],
+    "pkgdown": "https://epiverse-trace.github.io/finalsize/"
+  },
+  "simulist": {
+    "title": "Simulate Disease Outbreak Line List and Contacts Data",
+    "description": "Tools to simulate realistic raw case data for an epidemic in the form of line lists and contacts using a branching process. Simulated outbreaks are parameterised with epidemiological parameters and can have age-structured populations, age-stratified hospitalisation and death risk and time-varying case fatality risk.",
+    "version": "0.7.1",
+    "exports": [
+      "censor_linelist",
+      "create_config",
+      "messy_linelist",
+      "sim_contacts",
+      "sim_linelist",
+      "sim_outbreak",
+      "truncate_linelist"
+    ],
+    "vignettes": [
+      "Age-stratified hospitalisation and death risks",
+      "Age-structured population",
+      "Design Principles for {simulist}",
+      "Getting Started with {simulist}",
+      "Reporting delays and right-truncation of line list data",
+      "Time-varying case fatality risk",
+      "Visualising simulated data",
+      "Wrangling simulated outbreak data"
+    ],
+    "pkgdown": "https://epiverse-trace.github.io/simulist/"
+  },
+  "linelist": {
+    "title": "Tagging and Validating Epidemiological Data",
+    "description": "Provides tools to help storing and handling case line list data. The 'linelist' class adds a tagging system to classical 'data.frame' objects to identify key epidemiological data such as dates of symptom onset, epidemiological case definition, age, gender or disease outcome. Once tagged, these variables can be seamlessly used in downstream analyses, making data pipelines more robust and reliable.",
+    "version": "2.0.1.9000",
+    "exports": [
+      "get_lost_tags_action",
+      "has_tag",
+      "lost_tags_action",
+      "make_linelist",
+      "set_tags",
+      "tags",
+      "tags_defaults",
+      "tags_df",
+      "tags_names",
+      "tags_types",
+      "validate_linelist",
+      "validate_tags",
+      "validate_types"
+    ],
+    "vignettes": [
+      "An introduction to linelist",
+      "Compatibility with dplyr",
+      "Design Principles for linelist",
+      "Software permissions and regulations"
+    ],
+    "pkgdown": "https://epiverse-trace.github.io/linelist/"
+  },
+  "epichains": {
+    "title": "Simulating and Analysing Transmission Chain Statistics Using\nBranching Process Models",
+    "description": "Provides methods to simulate and analyse the size and length of branching processes with an arbitrary offspring distribution. These can be used, for example, to analyse the distribution of chain sizes or length of infectious disease outbreaks, as discussed in Farrington et al. (2003) <doi:10.1093/biostatistics/4.2.279>.",
+    "version": "0.1.1.9000",
+    "exports": [
+      "dborel",
+      "likelihood",
+      "rborel",
+      "rgborel",
+      "simulate_chain_stats",
+      "simulate_chains"
+    ],
+    "vignettes": [
+      "Design Principles for {epichains}",
+      "Getting started with epichains",
+      "Literature on branching process applications",
+      "Modelling disease control interventions",
+      "Projecting infectious disease incidence: a COVID-19 example",
+      "Theoretical background for epichains"
+    ],
+    "pkgdown": "https://epiverse-trace.github.io/epichains/"
+  },
+  "epiparameter": {
+    "title": "Classes and Helper Functions for Working with Epidemiological\nParameters",
+    "description": "Classes and helper functions for loading, extracting, converting, manipulating, plotting and aggregating epidemiological parameters for infectious diseases. Epidemiological parameters extracted from the literature are loaded from the 'epiparameterDB' R package.",
+    "version": "0.4.1.9000",
+    "exports": [
+      "as_epiparameter",
+      "assert_epiparameter",
+      "calc_disc_dist_quantile",
+      "cdf",
+      "convert_params_to_summary_stats",
+      "convert_summary_stats_to_params",
+      "create_citation",
+      "create_metadata",
+      "create_method_assess",
+      "create_prob_distribution",
+      "create_region",
+      "create_summary_stats",
+      "create_uncertainty",
+      "discretise",
+      "discretize",
+      "epidist_db",
+      "epiparameter",
+      "epiparameter_db",
+      "extract_param",
+      "generate",
+      "get_citation",
+      "get_parameters",
+      "is_continuous",
+      "is_epiparameter",
+      "is_epiparameter_params",
+      "is_parameterised",
+      "is_parameterized",
+      "is_truncated",
+      "parameter_tbl",
+      "test_epiparameter"
+    ],
+    "vignettes": [
+      "Current database",
+      "Data Collation and Synthesis Protocol",
+      "Design Principles for {epiparameter}",
+      "Getting Started with {epiparameter}",
+      "Parameter extraction and conversion in {epiparameter}"
+    ],
+    "pkgdown": "https://epiverse-trace.github.io/epiparameter/"
+  },
+  "epiparameterDB": {
+    "title": "Database of Epidemiological Parameters",
+    "description": "A data package containing a database of epidemiological parameters. It stores the data for the 'epiparameter' R package. Epidemiological parameter estimates are extracted from the literature.",
+    "version": "0.1.0.9000",
+    "exports": [],
+    "vignettes": [
+      "Current database",
+      "Design Principles for {epiparameterDB}"
+    ],
+    "pkgdown": "https://epiverse-trace.github.io/epiparameterDB/"
+  },
+  "readepi": {
+    "title": "Read Data from Relational Database Management Systems and Health\nInformation Systems",
+    "description": "Import Data from Relational Database Management Systems (RDBMS) and Health Information Systems ('HIS'). The current version of the package supports importing data from RDBMS including 'MS SQL', 'MySQL', 'PostGRESQL', and 'SQLite', as well as from two HIS platforms: 'DHIS2' and 'SORMAS'.",
+    "version": "1.0.4",
+    "exports": [
+      "dhis2_login",
+      "get_api_version",
+      "get_data_elements",
+      "get_organisation_units",
+      "get_program_org_units",
+      "get_program_stages",
+      "get_programs",
+      "get_tracked_entities",
+      "login",
+      "read_dhis2",
+      "read_rdbms",
+      "read_sormas",
+      "show_tables",
+      "sormas_get_api_specification",
+      "sormas_get_data_dictionary",
+      "sormas_get_diseases"
+    ],
+    "vignettes": [
+      "Installing drivers",
+      "Package design vignette for {readepi}",
+      "Query parameters",
+      "readepi: Reading data from health information systems"
+    ],
+    "pkgdown": "https://epiverse-trace.github.io/readepi/"
+  },
+  "superspreading": {
+    "title": "Understand Individual-Level Variation in Infectious Disease\nTransmission",
+    "description": "Estimate and understand individual-level variation in transmission. Implements density and cumulative compound Poisson discrete distribution functions (Kremer et al. (2021) <doi:10.1038/s41598-021-93578-x>), as well as functions to calculate infectious disease outbreak statistics given epidemiological parameters on individual-level transmission; including the probability of an outbreak becoming an epidemic/extinct (Kucharski et al. (2020) <doi:10.1016/S1473-3099(20)30144-4>), or the cluster size statistics, e.g. what proportion of cases cause X\\% of transmission (Lloyd-Smith et al. (2005) <doi:10.1038/nature04153>).",
+    "version": "0.4.0.9000",
+    "exports": [
+      "calc_network_R",
+      "dpoislnorm",
+      "dpoisweibull",
+      "ic_tbl",
+      "ppoislnorm",
+      "ppoisweibull",
+      "probability_contain",
+      "probability_emergence",
+      "probability_epidemic",
+      "probability_extinct",
+      "proportion_cluster_size",
+      "proportion_transmission"
+    ],
+    "vignettes": [
+      "Design Principles for {superspreading}",
+      "Epidemic Risk",
+      "Estimate individual-level transmission",
+      "Getting started with {superspreading}",
+      "Methods for calculating the proportion of transmission",
+      "Outbreaks in heterogeneous networks",
+      "Pathogen evolution in the emergence of infectious disease outbreaks"
+    ],
+    "pkgdown": "https://epiverse-trace.github.io/superspreading/"
+  },
+  "cleanepi": {
+    "title": "Clean and Standardize Epidemiological Data",
+    "description": "Cleaning and standardizing tabular data package, tailored specifically for curating epidemiological data. It streamlines various data cleaning tasks that are typically expected when working with datasets in epidemiology. It returns the processed data in the same format, and generates a comprehensive report detailing the outcomes of each cleaning task.",
+    "version": "1.1.2.9000",
+    "exports": [
+      "%>%",
+      "add_to_dictionary",
+      "add_to_report",
+      "check_date_sequence",
+      "check_subject_ids",
+      "clean_data",
+      "clean_using_dictionary",
+      "convert_numeric_to_date",
+      "convert_to_numeric",
+      "correct_misspelled_values",
+      "correct_subject_ids",
+      "find_duplicates",
+      "get_default_params",
+      "print_report",
+      "remove_constants",
+      "remove_duplicates",
+      "replace_missing_values",
+      "scan_data",
+      "standardize_column_names",
+      "standardize_dates",
+      "timespan"
+    ],
+    "vignettes": [
+      "Introduction to cleanepi",
+      "Package Design vignette for {cleanepi}"
+    ],
+    "pkgdown": "https://epiverse-trace.github.io/cleanepi/"
+  },
+  "vaccineff": {
+    "title": "Estimate Vaccine Effectiveness Based on Different Study Designs",
+    "description": "Provides tools for estimating vaccine effectiveness and related metrics. The 'vaccineff_data' class manages key features for preparing, visualizing, and organizing cohort data, as well as estimating vaccine effectiveness. The results and model performance are assessed using the 'vaccineff' class.",
+    "version": "1.0.1",
+    "exports": [
+      "estimate_vaccineff",
+      "get_age_group",
+      "make_vaccineff_data"
+    ],
+    "vignettes": [
+      "Introduction to cohort design with vaccineff",
+      "Other study designs",
+      "vaccineff"
+    ],
+    "pkgdown": "https://epiverse-trace.github.io/vaccineff/"
+  },
+  "tracetheme": {
+    "title": "A 'ggplot2' Theme and Scale Using 'Epiverse-TRACE' Visual Style",
+    "description": "A 'ggplot2' theme and scale using 'Epiverse-TRACE' visual style, colour scheme, and visualisation guidelines.",
+    "version": "0.1.0.9000",
+    "exports": [
+      "theme_trace"
+    ],
+    "vignettes": [
+      "Design Principles for tracetheme",
+      "Epiverse-TRACE ggplot2 theme and scale demo",
+      "Guidelines for Visualisations"
+    ],
+    "pkgdown": ""
+  },
+  "numberize": {
+    "title": "Convert Words to Numbers in Multiple Languages",
+    "description": "Converts written out numbers into their equivalent numbers. Supports numbers written out in English, French, or Spanish.",
+    "version": "1.0.1",
+    "exports": [
+      "numberize"
+    ],
+    "vignettes": [],
+    "pkgdown": ""
+  }
+}

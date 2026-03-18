@@ -1,0 +1,33 @@
+Moissala Linelist Tagged Variables
+===================================
+
+Generated: 2026-02-11 15:37:20.346621
+
+Tagged epidemiological variables:
+$id
+[1] "id"
+
+$date_onset
+[1] "date_debut"
+
+$date_reporting
+[1] "date_consultation"
+
+$date_admission
+[1] "date_admission"
+
+$date_outcome
+[1] "date_issue"
+
+$gender
+[1] "sexe"
+
+$age
+[1] "age_years"
+
+$location
+[1] "village_commune"
+
+$outcome
+[1] "issue"
+

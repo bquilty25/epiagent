@@ -1,0 +1,38 @@
+MOISSALA OUTBREAK DESCRIPTIVE STATISTICS
+=========================================
+
+Analysis date: 2026-02-11 
+
+OUTBREAK OVERVIEW
+-----------------
+Total cases: 5130 
+Outbreak period: 2022-08-13 to 2023-11-22 
+Duration: 466 days
+Unique locations affected: 245 
+
+OUTCOMES
+--------
+Deaths: 454 
+Recovered: 4099 
+Unknown outcome: 577 
+Case Fatality Ratio: 9.97 %
+
+DEMOGRAPHICS
+------------
+Female cases: 2557 
+Male cases: 2573 
+Sex ratio (M:F): 1.01 :1
+Mean age: 4.7 years
+Median age: 2 years
+Age range: -0.2-40 years
+
+CLINICAL PRESENTATION
+---------------------
+fievre              : 2356/4498 (52.4%)
+eruption            : 2355/4465 (52.7%)
+toux                : 2458/4472 (55.0%)
+yeux_rouges         : 1530/4446 (34.4%)
+pneumonie           : 80/4334 (1.8%)
+encephalite         : 6/4324 (0.1%)
+Hospitalization     : 1675/4911 (34.1%)
+Vaccination         : 894/4469 (20.0%)
