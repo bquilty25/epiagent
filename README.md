@@ -80,8 +80,6 @@ Then clone this repository into your working directory so Claude Code can load t
 
 MIT License — see [LICENSE](LICENSE) for details.
 
-This project builds upon the Epiverse-TRACE ecosystem, supported by data.org and developed by the Centre for the Mathematical Modelling of Infectious Diseases at the London School of Hygiene & Tropical Medicine.
-
 ---
 
 **Skills for [Claude Agent SDK](https://github.com/anthropics/claude-agent-sdk)** 
